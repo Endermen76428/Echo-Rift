@@ -1,0 +1,35 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:door",
+      "menu_category": { "category": "none" },
+      "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } },
+      "states": { "echo_rift:close": [false, true] }
+    },
+    "components": {
+      "echo_rift:door": {},
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "ender_addon_pack:door" } },
+      "minecraft:movable": { "movement_type": "immovable" },
+      "minecraft:selection_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 1 ] },
+      "minecraft:collision_box": true,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' || q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": { "minecraft:transformation": { "rotation": [0, 90, 0] } }
+      },
+
+      {
+        "condition": "q.block_state('echo_rift:close') == true",
+        "components": {
+          "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "bedrock" } },
+          "minecraft:selection_box": false
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+Se sair do mapa proximo a uma fenda o interval de verificar os itens é , acho que da pra revolver so no player spawn e verificar se tem um rift perto dele pra reinicializar, já que ele se concertá quando se afasta e volta
+as vezes da um erro no spawnEntity do backup do inventario, mas não parece que continua dando spawn nela, não sei se é muito problema
+fazer um sistema que da gera as escadarias do miniboss sempre em direção ao leste pra que sempre avance para frente evitando tambem que a sala dos miniboss não possam ser colocadas pelo tamanho
+se o player sair do mapa e o outro continuar jogando iniciando outra raid na dimensão o backup do player que não voltou a jogar acaba sumindo
+
+Echo Rift v0.1.0 Alpha
+
+> Features
+Biome:
+  > Marble Caves:
+  - Marble Caves is a new biome which can be found around the biomes:
+    - Plains;
+    - Sunflower Plains;
+    - Forest;
+    - Flower Forest;
+    - Birch Forest.
+  - The biome has all underground replaced by Marble Blocks:
+    - Marble Block;
+    - Red Marble block;
+    - Black Marble Block.
+  - You can find the blocks of Marble with a Mempory Fragment anywhere in the biome, in its all-marble version.
+  - Forgotten Kingdom Portal is a new structure found on Marble Cave Biome.
+
+mklink /J "%AppData%\Minecraft Bedrock\Users\Shared\games\com.mojang\development_behavior_packs/Echo Rift (Addon)" "C:\Backup\0 - MCPEDL\0 - GITHUB\Echo Rift\code\1 - BP"
+
+mklink /J "%AppData%\Minecraft Bedrock\Users\Shared\games\com.mojang\development_resource_packs/Echo Rift (Texture)" "C:\Backup\0 - MCPEDL\0 - GITHUB\Echo Rift\code\2 - RP"

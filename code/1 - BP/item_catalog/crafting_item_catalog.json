@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": { "name": "echo_rift:itemGroup.name.marble", "icon": "echo_rift:marble" },
+            "items": [
+              "echo_rift:marble",
+              "echo_rift:marble_slab",
+              "echo_rift:marble_slab_vertical",
+              "echo_rift:marble_stairs",
+
+              "echo_rift:red_marble",
+              "echo_rift:red_marble_slab",
+              "echo_rift:red_marble_slab_vertical",
+              "echo_rift:red_marble_stairs",
+
+              "echo_rift:black_marble",
+              "echo_rift:black_marble_slab",
+              "echo_rift:black_marble_slab_vertical",
+              "echo_rift:black_marble_stairs"
+            ]
+          },
+          {
+            "group_identifier": { "name": "echo_rift:itemGroup.name.unbreak_blocks", "icon": "minecraft:barrier" },
+            "items": [
+              "echo_rift:marble_unbreak",
+              "echo_rift:marble_slab_unbreak",
+              "echo_rift:marble_slab_vertical_unbreak",
+              "echo_rift:marble_stairs_unbreak",
+
+              "echo_rift:red_marble_unbreak",
+              "echo_rift:red_marble_slab_unbreak",
+              "echo_rift:red_marble_slab_vertical_unbreak",
+              "echo_rift:red_marble_stairs_unbreak",
+
+              "echo_rift:black_marble_unbreak",
+              "echo_rift:black_marble_slab_unbreak",
+              "echo_rift:black_marble_slab_vertical_unbreak",
+              "echo_rift:black_marble_stairs_unbreak"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "echo_rift:return_rift",
+      "is_summonable": true,
+      "is_spawnable": false,
+      "properties": {
+        "echo_rift:has_nearby": { "type": "bool", "default": false }
+      }
+    },
+
+    "component_groups": { "echo_rift:despawn": { "minecraft:instant_despawn": {} } },
+
+    "components": {
+      "minecraft:type_family": { "family": [ "echo_rift:immortal", "echo_rift:rift" ] },
+      "minecraft:health": { "value": 1, "min": 1 },
+      "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": "no" } ] },
+      "minecraft:collision_box": { "width": 0, "height": 0 },
+      "minecraft:nameable": { "allow_name_tag_renaming": false },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": { "test": "distance_to_nearest_player", "subject": "self", "operator": "<=", "value": 6 },
+            "event": "echo_rift:add_rift_listener"
+          },
+          {
+            "filters": { "test": "distance_to_nearest_player", "subject": "self", "operator": ">", "value": 6 },
+            "event": "echo_rift:remove_rift_listener"
+          }
+        ]
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:persistent": {},
+      "minecraft:physics": { "has_collision": false, "has_gravity": false }
+    },
+
+    "events": {
+      "echo_rift:despawn": { "add": { "component_groups": [ "echo_rift:despawn" ] } },
+
+      "echo_rift:add_rift_listener": {
+        "filters": { "test": "bool_property", "subject": "self", "domain": "echo_rift:has_nearby", "operator": "==", "value": false },
+        "set_property": { "echo_rift:has_nearby": true },
+        "queue_command": { "command": "scriptevent echo_rift:add_return_rift_listener" }
+      },
+      "echo_rift:remove_rift_listener": {
+        "filters": { "test": "bool_property", "subject": "self", "domain": "echo_rift:has_nearby", "operator": "==", "value": true },
+        "set_property": { "echo_rift:has_nearby": false },
+        "queue_command": { "command": "scriptevent echo_rift:remove_return_rift_listener" }
+      }
+    }
+  }
+}

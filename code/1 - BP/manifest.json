@@ -1,0 +1,43 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Echo Rift v0.1 (Addon / Alpha)",
+    "description": "pack.description",
+    "uuid": "ac0718eb-5d69-4214-bf38-7fe6d5e867de",
+    "min_engine_version": [1, 26, 30],
+    "version": [0, 1, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "6fe96c72-3d40-40c2-ba47-3b8ae6551349",
+      "version": [0, 1, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/echo_rift/main.js",
+      "uuid": "9c64a966-2f92-4a7f-9670-f2e5fc2f7a9f",
+      "version": [0, 1, 0]
+    }
+  ],
+  "metadata": {
+    "product_type": "addon",
+    "authors": ["§bEndermen76428§r & §5Heartiorn"],
+    "url": "https://www.curseforge.com/minecraft-bedrock/addons/travel-backpacks"
+  },
+  "dependencies": [
+    {
+      "uuid": "ae620a92-840b-471d-849e-2f19a4f6a8b4",
+      "version": [0, 1, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.8.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.1.0"
+    }
+  ]
+}

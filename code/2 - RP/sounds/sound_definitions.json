@@ -1,0 +1,110 @@
+{
+  "format_version": "1.21.60",
+  "sound_definitions": {
+    // Dimension
+    "dimension.echo_rift:raid.fail": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [
+        { "name": "sounds/mob/enderdragon/growl1", "is3D": false },
+        { "name": "sounds/mob/enderdragon/growl2", "is3D": false },
+        { "name": "sounds/mob/enderdragon/growl3", "is3D": false },
+        { "name": "sounds/mob/enderdragon/growl4", "is3D": false }
+      ],
+      "subtitle": "subtitles.dimension.echo_rift:general.fail"
+    },
+
+    // Entity
+    "entity.echo_rift:spacetime_rift.active": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [ { "name": "sounds/block/beacon/activate", "volume": 3 } ],
+      "subtitle": "subtitles.entity.echo_rift:spacetime_rift.active"
+    },
+    "entity.echo_rift:spacetime_rift.consume": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [
+        { "name": "sounds/block/respawn_anchor/charge1" },
+        { "name": "sounds/block/respawn_anchor/charge2" },
+        { "name": "sounds/block/respawn_anchor/charge3" }
+      ],
+      "subtitle": "subtitles.entity.echo_rift:spacetime_rift.consume"
+    },
+
+    // Warn
+
+    "warn.ender_addon_pack:levelup": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [ { "name": "sounds/random/levelup", "is3D": false } ],
+      "subtitle": "subtitles.warn.ender_addon_pack:confirmed"
+    },
+    "warn.ender_addon_pack:bass": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [ { "name": "sounds/note/bass", "is3D": false } ],
+      "subtitle": "subtitles.warn.ender_addon_pack:rejected"
+    },
+    "warn.ender_addon_pack:break": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [ { "name": "sounds/random/break", "is3D": false } ],
+      "subtitle": "subtitles.warn.ender_addon_pack:canceled"
+    },
+    "warn.ender_addon_pack:pop": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [ { "name": "sounds/random/pop", "is3D": false } ],
+      "subtitle": "subtitles.warn.ender_addon_pack:pop"
+    },
+    "warn.ender_addon_pack:orb": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [ { "name": "sounds/random/orb", "is3D": false } ],
+      "subtitle": "subtitles.warn.ender_addon_pack:ping"
+    },
+    "warn.ender_addon_pack:break_amethyst": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [
+        { "name": "sounds/block/amethyst/break1", "is3D": false },
+        { "name": "sounds/block/amethyst/break2", "is3D": false },
+        { "name": "sounds/block/amethyst/break3", "is3D": false },
+        { "name": "sounds/block/amethyst/break4", "is3D": false }
+      ],
+      "subtitle": "subtitles.warn.ender_addon_pack:saved"
+    },
+    "warn.ender_addon_pack:enchanting_table": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [
+        { "name": "sounds/block/enchanting_table/enchant1", "is3D": false },
+        { "name": "sounds/block/enchanting_table/enchant2", "is3D": false },
+        { "name": "sounds/block/enchanting_table/enchant3", "is3D": false }
+      ],
+      "subtitle": "subtitles.warn.ender_addon_pack:activate"
+    },
+    "warn.ender_addon_pack:deactive": {
+      "category": "warn",
+      "max_distance": 8,
+      "min_distance": 0,
+      "sounds": [
+        { "name": "sounds/block/beacon/deactivate", "is3D": false, "pitch": 0.95 },
+        { "name": "sounds/block/beacon/deactivate", "is3D": false, "pitch": 1 },
+        { "name": "sounds/block/beacon/deactivate", "is3D": false, "pitch": 1.05 }
+      ],
+      "subtitle": "subtitles.warn.ender_addon_pack:deactiveted"
+    }
+  }
+}

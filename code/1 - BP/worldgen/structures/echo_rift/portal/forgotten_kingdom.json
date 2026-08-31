@@ -1,0 +1,26 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "echo_rift:portal_forgotten_kingdom"
+    },
+    "biome_filters": [
+      {
+        "all_of": [
+          { "test": "has_biome_tag", "operator": "==", "value": "overworld" },
+          { "test": "has_biome_tag", "operator": "==", "value": "echo_rift:marble_cave" }
+        ]
+      }
+    ],
+    "start_pool": "echo_rift:portal/forgotten_kingdom",
+    "heightmap_projection": "world_surface",
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_thin",
+    "start_height": {
+      "type": "uniform",
+      "min": { "absolute": 1 },
+      "max": { "absolute": 1 }
+    },
+    "max_depth": 1
+  }
+}

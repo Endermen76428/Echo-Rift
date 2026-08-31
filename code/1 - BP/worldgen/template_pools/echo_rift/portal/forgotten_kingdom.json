@@ -1,0 +1,19 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "echo_rift:portal/forgotten_kingdom"
+    },
+    "elements": [
+      {
+        "weight": 100,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "echo_rift/portal/forgotten_kingdom/5x7",
+          "projection": "rigid"
+          // "processors": "echo_rift:echo_rift/portal/forgotten_kingdom"
+        }
+      }
+    ]
+  }
+}

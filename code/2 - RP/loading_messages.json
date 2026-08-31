@@ -1,0 +1,7 @@
+{
+  "loading_messages": [
+    "loading_message.echo_rift:tip.wake_up",
+    "loading_message.echo_rift:tip.need_sacrifice",
+    "loading_message.echo_rift:random_lines.is_an_addon"
+  ]
+}

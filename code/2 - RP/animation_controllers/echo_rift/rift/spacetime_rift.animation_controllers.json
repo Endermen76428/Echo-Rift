@@ -1,0 +1,27 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.echo_rift.spacetime_rift.general": {
+      "initial_state": "open",
+      "states": {
+        "open": {
+          "animations": ["opening"],
+          "transitions": [
+            {"remove": "v.removing"},
+            {"closing": "v.complete == 1"}
+          ],
+          "blend_transition": 0.2
+        },
+        "remove": {
+          "animations": ["removing"]
+        },
+        "closing": {
+          "animations": ["closing"],
+          "transitions": [
+            {"remove": "v.removing"}
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":"0.2.0","configurations":[{"type":"minecraft-js","request":"attach","name":"AttachtoMinecraft","mode":"listen","localRoot":"${workspaceFolder}/scripts","host":"localhost","port":19144}]}

@@ -1,0 +1,23 @@
+{
+  "resource_pack_name": "Echo Rift",
+  "texture_name": "atlas.terrain",
+  "num_mip_levels": 4,
+  "padding": 8,
+  "texture_data": {
+    "ender_addon_pack:null": { "textures": "textures/null" },
+
+    "ender_addon_pack:door": { "textures": "textures/echo_rift/blocks/dimension/door" },
+
+    // Forgotten kingdom
+    "echo_rift:black_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/decoration/black_marble" },
+    "echo_rift:forgotten_kingdom_portal_corner": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/portal/portal_corner" },
+    "echo_rift:forgotten_kingdom_portal_frame": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/portal/portal_frame" },
+    "echo_rift:forgotten_kingdom_portal_frame_horizontal": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/portal/portal_frame_horizontal" },
+    "echo_rift:marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/decoration/marble" },
+    "echo_rift:red_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/decoration/red_marble" },
+
+    "echo_rift:memory_frag_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_marble" },
+    "echo_rift:memory_frag_red_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_red_marble" },
+    "echo_rift:memory_frag_black_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_black_marble" }
+  }
+}

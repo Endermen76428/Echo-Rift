@@ -1,0 +1,6 @@
+{
+  "ui_defs": [
+    "ui/echo_rift/hud/timer.json",
+    "ui/echo_rift/hud/title.json"
+  ]
+}

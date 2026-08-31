@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block_culling_rules": {
+    "description": {
+      "identifier": "echo_rift:slab_top"
+    },
+    "rules": [
+      {
+        "geometry_part": { "bone": "top", "cube": 0, "face": "north" },
+        "direction": "north",
+        "condition": "same_block_permutation"
+      },
+      {
+        "geometry_part": { "bone": "top", "cube": 0, "face": "south" },
+        "direction": "south",
+        "condition": "same_block_permutation"
+      },
+      {
+        "geometry_part": { "bone": "top", "cube": 0, "face": "east" },
+        "direction": "east",
+        "condition": "same_block_permutation"
+      },
+      {
+        "geometry_part": { "bone": "top", "cube": 0, "face": "west" },
+        "direction": "west",
+        "condition": "same_block_permutation"
+      },
+      {
+        "geometry_part": { "bone": "top", "cube": 0, "face": "up" },
+        "direction": "up",
+        "condition": "same_block_permutation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:dark",
+      "menu_category": { "category": "none" }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "ender_addon_pack:null" } },
+      "minecraft:movable": { "movement_type": "immovable" },
+      "minecraft:selection_box": false,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": { "identifier": "echo_rift:echo_rift/dimension/forgotten_kingdom/memory_frag_red_marble_feature" },
+    "count": 7,
+    "replace_rules": [
+      {
+        "places_block": "echo_rift:memory_frag_red_marble",
+        "may_replace": [ "echo_rift:red_marble" ]
+      }
+    ]
+  }
+}

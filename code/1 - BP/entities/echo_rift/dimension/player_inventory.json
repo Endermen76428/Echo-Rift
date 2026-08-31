@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "echo_rift:player_inventory",
+      "is_summonable": true,
+      "is_spawnable": false
+    },
+
+    "component_groups": {
+      "echo_rift:despawn": { "minecraft:instant_despawn": {} }
+    },
+
+    "components": {
+      "minecraft:inventory": { "container_type": "container", "inventory_size": 50 },
+      "minecraft:type_family": { "family": [ "inventory" ] },
+      "minecraft:health": { "value": 1, "min": 1 },
+      "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": "no" } ] },
+      "minecraft:collision_box": { "width": 1, "height": 1 },
+      "minecraft:nameable": { "allow_name_tag_renaming": false },
+      "minecraft:fire_immune": {},
+      "minecraft:persistent": {},
+      "minecraft:physics": { "has_collision": false, "has_gravity": false }
+    },
+
+    "events": {
+      "echo_rift:despawn": { "add": { "component_groups": [ "echo_rift:despawn" ] } }
+    }
+  }
+}

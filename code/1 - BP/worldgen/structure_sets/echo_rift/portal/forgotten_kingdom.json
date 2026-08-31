@@ -1,0 +1,21 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "echo_rift:portal/forgotten_kingdom"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spread_type": "triangular",
+      "salt": 76428,
+      "spacing": 32,
+      "separation": 14
+    },
+    "structures": [
+      {
+        "structure": "echo_rift:portal_forgotten_kingdom",
+        "weight": 100
+      }
+    ]
+  }
+}

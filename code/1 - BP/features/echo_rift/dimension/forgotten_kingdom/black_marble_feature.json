@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": { "identifier": "echo_rift:echo_rift/dimension/forgotten_kingdom/black_marble_feature" },
+    "count": 150,
+    "replace_rules": [
+      {
+        "places_block": "echo_rift:black_marble",
+        "may_replace": [ "minecraft:stone" ]
+      }
+    ]
+  }
+}

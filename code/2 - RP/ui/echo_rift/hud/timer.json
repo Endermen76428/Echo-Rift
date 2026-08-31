@@ -1,0 +1,196 @@
+{
+  "namespace": "echo_rift-timer",
+
+  "anim_timer_fade": {
+    "anim_type": "alpha",
+    "easing": "in_expo",
+    "duration": 1,
+    "from": 1,
+    "to": 0,
+    "destroy_at_end": "timer_panel",
+    "end_event": "hud_actionbar_text_complete"
+  },
+
+  "timer_panel": {
+    "type": "panel",
+    "alpha": "@echo_rift-timer.anim_timer_fade",
+    "propagate_alpha": true,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "timer_data_control",
+        "source_property_name": "#preserved_text",
+        "target_property_name": "#info"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(('%.5s' * #info) = 'errb:')",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "timer_background": {
+          "type": "panel",
+          "size": [ "100%cm + 10px", "100%cm + 6px" ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "alpha": 0.7,
+          "controls": [
+            {
+              "number": {
+                "type": "label",
+                "text": "#text",
+                "offset": [ 0.5, 0.5 ],
+                "text_alignment": "center",
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "timer_data_control",
+                    "source_property_name": "#preserved_text",
+                    "target_property_name": "#info"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "('%.9s' * (#info - ('%.5s' * #info)))",
+                    "target_property_name": "#text"
+                  }
+                ]
+              }
+            }
+            /* {
+              "centered_panel": {
+                "type": "panel",
+                "size": [ "100%c", "100%c" ],
+                // "offset": [ 0, -5 ],
+                "controls": [
+                  // {
+                  //   "label": {
+                  //     "type": "label",
+                  //     "text": "ui.echo_rift:memory.timer",
+                  //     "text_alignment": "center",
+                  //     "localize": true
+                  //   }
+                  // },
+                  {
+                    "number": {
+                      "type": "label",
+                      "text": "#text",
+                      // "offset": [ 0, 2 ],
+                      "text_alignment": "center",
+                      "anchor_from": "center",
+                      "anchor_to": "center",
+                      "bindings": [
+                        {
+                          "binding_type": "view",
+                          "source_control_name": "timer_data_control",
+                          "source_property_name": "#preserved_text",
+                          "target_property_name": "#info"
+                        },
+                        {
+                          "binding_type": "view",
+                          "source_property_name": "(#info - ('%.5s' * #info))",
+                          "target_property_name": "#time"
+                        },
+                        {
+                          "binding_type": "view",
+                          // "source_property_name": "('< ' + #info + ' >')",
+                          "source_property_name": "('%.9s' * #time)",
+                          "target_property_name": "#text"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            } */
+          ]
+        }
+      },
+      {
+        "raid_progress_bar": {
+          "type": "image",
+          "texture": "textures/echo_rift/ui/hud/raid_progress_empty",
+          "size": [ 76, 8 ],
+          "offset": [ 0, 16 ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "controls": [
+            {
+              "raid_progress_full": {
+                "$max_value": 1000.0,
+                "type": "image",
+                "texture": "textures/echo_rift/ui/hud/raid_progress_full",
+                "color": "red",
+                "size": [ 76, 10 ],
+                "clip_direction": "left",
+                "clip_pixelperfect": false,
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "timer_data_control",
+                    "source_property_name": "#preserved_text",
+                    "target_property_name": "#info"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(#info - ('%.15s' * #info))",
+                    "target_property_name": "#value_extracted"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(($max_value - #value_extracted) / $max_value)",
+                    "target_property_name": "#clip_ratio"
+                  }
+                ]
+              }
+            },
+            {
+              "details": {
+                "type": "image",
+                "size": [ 111, 15 ],
+                // "offset": [ 0, 7 ],
+                "bindings": [
+                  {
+                    "binding_type": "view",
+                    "source_control_name": "timer_data_control",
+                    "source_property_name": "#preserved_text",
+                    "target_property_name": "#info"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "('textures/echo_rift/ui/hud/raid_bar/' + (#info - ('%.20s' * #info)))",
+                    "target_property_name": "#texture"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "level_title": {
+          "type": "label",
+          "text": "#text",
+          "localize": true,
+          "offset": [ 0, 27 ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "timer_data_control",
+              "source_property_name": "#preserved_text",
+              "target_property_name": "#info"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(('dimension.echo_rift:forgotten_kingdom.level_' + (#info - ('%.23s' * #info))) + '.name')",
+              "target_property_name": "#text"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

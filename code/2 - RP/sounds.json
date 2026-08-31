@@ -1,0 +1,49 @@
+{
+  "entity_sounds": {
+    "entities": {
+      // Forgotten Kingdom
+      "echo_rift:marble_silverfish": {
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "death": "mob.silverfish.kill",
+          "hurt": "mob.silverfish.hit",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.silverfish.step",
+            "volume": 0.350
+          }
+        },
+        "pitch": [ 0.80, 1.20 ],
+        "volume": 1.0
+      },
+      "echo_rift:marble_silverfish_empress": {
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "death": "mob.silverfish.kill",
+          "hurt": "mob.silverfish.hit",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.silverfish.step",
+            "volume": 0.350
+          }
+        },
+        "pitch": [ 0.80, 1.20 ],
+        "volume": 1.0
+      },
+      "echo_rift:zombie_miner": {
+        "events": {
+          "ambient": "mob.zombie.say",
+          "death": "mob.zombie.death",
+          "hurt": "mob.zombie.hurt",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.zombie.step",
+            "volume": 0.450
+          }
+        },
+        "pitch": [ 0.80, 1.20 ],
+        "volume": 1.0
+      }
+    }
+  }
+}

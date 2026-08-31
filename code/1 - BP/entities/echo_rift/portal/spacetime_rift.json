@@ -1,0 +1,105 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "echo_rift:spacetime_rift",
+      "is_summonable": true,
+      "is_spawnable": false,
+      "properties": {
+        "echo_rift:has_nearby": { "type": "bool", "default": false },
+        "echo_rift:rotate": { "type": "bool", "default": false },
+        "echo_rift:closing": { "type": "bool", "default": false },
+        "echo_rift:stable": { "type": "bool", "default": false, "client_sync": true },
+        "echo_rift:width": { "type": "int", "range": [0, 24], "default": 0, "client_sync": true },
+        "echo_rift:height": { "type": "int", "range": [0, 32], "default": 0, "client_sync": true },
+        "echo_rift:complete": { "type": "int", "range": [0, 100], "default": 0, "client_sync": true },
+        "echo_rift:type": { "type": "int", "range": [0, 1], "default": 0, "client_sync": true }
+      }
+    },
+
+    "component_groups": {
+      "echo_rift:despawn": { "minecraft:instant_despawn": {} },
+
+      "echo_rift:initial_animation": { "minecraft:timer": { "time": 0.75, "time_down_event": { "event": "echo_rift:stabilize_portal" } } },
+      "echo_rift:waiting_animation": { "minecraft:timer": { "time": 1.0, "time_down_event": { "event": "echo_rift:add_checking_players" } } },
+
+      "echo_rift:check_players_nearby": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": { "test": "distance_to_nearest_player", "subject": "self", "operator": "<=", "value": 6 },
+              "event": "echo_rift:add_rift_listener"
+            },
+            {
+              "filters": { "test": "distance_to_nearest_player", "subject": "self", "operator": ">", "value": 6 },
+              "event": "echo_rift:remove_rift_listener"
+            }
+          ]
+        }
+      },
+
+      "echo_rift:interactive": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "entity.action.echo_rift:interact.sacrifice_item",
+              "on_interact": { "event": "echo_rift:nothing" }
+            }
+          ]
+        },
+        "minecraft:custom_hit_test": {
+          "hitboxes": [
+            { "pivot": [0, 8, 0], "width": 10, "height": 16 }
+          ]
+        }
+      },
+
+      "echo_rift:closing": { "minecraft:timer": { "time": 301.0, "time_down_event": { "event": "echo_rift:closing" } } },
+      "echo_rift:removing": { "minecraft:timer": { "time": 0.5, "time_down_event": { "event": "echo_rift:despawn" } } }
+    },
+
+    "components": {
+      "minecraft:type_family": { "family": [ "echo_rift:immortal", "echo_rift:rift" ] },
+      "minecraft:health": { "value": 1, "min": 1 },
+      "minecraft:damage_sensor": { "triggers": [ { "cause": "all", "deals_damage": "no" } ] },
+      "minecraft:collision_box": { "width": 0, "height": 0 },
+      "minecraft:nameable": { "allow_name_tag_renaming": false },
+      "minecraft:fire_immune": {},
+      "minecraft:persistent": {},
+      "minecraft:physics": { "has_collision": false, "has_gravity": false }
+    },
+
+    "events": {
+      "echo_rift:despawn": { "add": { "component_groups": [ "echo_rift:despawn" ] } },
+
+      "echo_rift:initialize_rift": { "add": { "component_groups": [ "echo_rift:initial_animation" ] } },
+
+      "echo_rift:stabilize_portal": {
+        "set_property": { "echo_rift:stable": true },
+        "add": { "component_groups": [ "echo_rift:waiting_animation" ] },
+        "remove": { "component_groups": [ "echo_rift:initial_animation" ] }
+      },
+      "echo_rift:add_checking_players": {
+        "add": { "component_groups": [ "echo_rift:check_players_nearby", "echo_rift:interactive" ] }
+      },
+
+      "echo_rift:start_close": {
+        "set_property": { "echo_rift:closing": true },
+        "add": { "component_groups": [ "echo_rift:closing" ] }
+      },
+      "echo_rift:closing": { "queue_command": { "command": "scriptevent echo_rift:closing_rift" } },
+      "echo_rift:start_removing": { "add": { "component_groups": [ "echo_rift:removing" ] } },
+
+      "echo_rift:add_rift_listener": {
+        "filters": { "test": "bool_property", "subject": "self", "domain": "echo_rift:has_nearby", "operator": "==", "value": false },
+        "set_property": { "echo_rift:has_nearby": true },
+        "queue_command": { "command": "scriptevent echo_rift:add_rift_listener" }
+      },
+      "echo_rift:remove_rift_listener": {
+        "filters": { "test": "bool_property", "subject": "self", "domain": "echo_rift:has_nearby", "operator": "==", "value": true },
+        "set_property": { "echo_rift:has_nearby": false },
+        "queue_command": { "command": "scriptevent echo_rift:remove_rift_listener" }
+      }
+    }
+  }
+}

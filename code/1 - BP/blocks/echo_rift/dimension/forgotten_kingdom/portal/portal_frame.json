@@ -1,0 +1,46 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:forgotten_kingdom_portal_frame_unbreak",
+      "menu_category": { "category": "none" },
+      "traits": { "minecraft:placement_position": { "enabled_states": ["minecraft:block_face"] } }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_frame" },
+        "up": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" },
+        "down": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" }
+      },
+      "minecraft:movable": { "movement_type": "immovable" },
+      "minecraft:light_dampening": 15,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'north' || q.block_state('minecraft:block_face') == 'south'",
+        "components": {
+          "minecraft:material_instances": {
+            "*": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_frame_horizontal" },
+            "east": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" },
+            "west": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" }
+          },
+          "minecraft:transformation": { "rotation": [-90, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:block_face') == 'west' || q.block_state('minecraft:block_face') == 'east'",
+        "components": {
+          "minecraft:material_instances": {
+            "*": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_frame_horizontal" },
+            "east": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" },
+            "west": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" }
+          },
+          "minecraft:transformation": { "rotation": [-90, 0, 0] }
+        }
+      }
+    ]
+  }
+}

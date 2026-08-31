@@ -1,0 +1,175 @@
+## --------------------------------------------------
+## Block
+## --------------------------------------------------
+
+tile.echo_rift:door.name=Door\n§9Echo Rift
+tile.echo_rift:dark.name=Dark\n§9Echo Rift
+tile.echo_rift:spawner.name=Spawner\n§9Echo Rift
+tile.echo_rift:spawner_miniboss.name=Spawner Mini Boss\n§9Echo Rift
+
+### Forgotten Kingdom
+
+tile.echo_rift:forgotten_kingdom_portal_corner.name=Forgotten Kingdom Portal Corner\n§9Echo Rift
+tile.echo_rift:forgotten_kingdom_portal_corner_unbreak.name=Forgotten Kingdom Portal Corner
+tile.echo_rift:forgotten_kingdom_portal_frame.name=Forgotten Kingdom Portal Frame\n§9Echo Rift
+tile.echo_rift:forgotten_kingdom_portal_frame_unbreak.name=Forgotten Kingdom Portal Frame
+
+## Decoration
+
+tile.echo_rift:black_marble.name=Black Marble Block\n§9Echo Rift
+tile.echo_rift:black_marble_unbreak.name=Black Marble Block
+tile.echo_rift:black_marble_slab.name=Black Marble Slab\n§9Echo Rift
+tile.echo_rift:black_marble_slab_unbreak.name=Black Marble Slab
+tile.echo_rift:black_marble_slab_vertical.name=Black Marble Slab Vertical\n§9Echo Rift
+tile.echo_rift:black_marble_slab_vertical_unbreak.name=Black Marble Slab Vertical
+tile.echo_rift:black_marble_stairs.name=Black Marble Stairs\n§9Echo Rift
+tile.echo_rift:black_marble_stairs_unbreak.name=Black Marble Stairs
+
+tile.echo_rift:marble.name=Marble Block\n§9Echo Rift
+tile.echo_rift:marble_unbreak.name=Marble Block
+tile.echo_rift:marble_slab.name=Marble Slab\n§9Echo Rift
+tile.echo_rift:marble_slab_unbreak.name=Marble Slab
+tile.echo_rift:marble_slab_vertical.name=Marble Slab Vertical\n§9Echo Rift
+tile.echo_rift:marble_slab_vertical_unbreak.name=Marble Slab Vertical
+tile.echo_rift:marble_stairs.name=Marble Stairs\n§9Echo Rift
+tile.echo_rift:marble_stairs_unbreak.name=Marble Stairs
+
+tile.echo_rift:red_marble.name=Red Marble Block\n§9Echo Rift
+tile.echo_rift:red_marble_unbreak.name=Red Marble Block
+tile.echo_rift:red_marble_slab.name=Red Marble Slab\n§9Echo Rift
+tile.echo_rift:red_marble_slab_unbreak.name=Red Marble Slab
+tile.echo_rift:red_marble_slab_vertical.name=Red Marble Slab Vertical\n§9Echo Rift
+tile.echo_rift:red_marble_slab_vertical_unbreak.name=Red Marble Slab Vertical
+tile.echo_rift:red_marble_stairs.name=Red Marble Stairs\n§9Echo Rift
+tile.echo_rift:red_marble_stairs_unbreak.name=Red Marble Stairs
+
+## Ores
+tile.echo_rift:memory_frag_marble.name=Marble with Memory Fragment\n§9Echo Rift
+tile.echo_rift:memory_frag_red_marble.name=Red Marble with Memory Fragment\n§9Echo Rift
+tile.echo_rift:memory_frag_black_marble.name=Black Marble with Memory Fragment\n§9Echo Rift
+
+### Sacrifice Items
+
+tile.echo_rift:marble.translate=Marble Block
+
+
+
+## --------------------------------------------------
+## Dimension
+## --------------------------------------------------
+
+dimension.echo_rift:forgotten_kingdom.level_1.name=Marble Mines
+dimension.echo_rift:forgotten_kingdom.level_10.name=Silverfish Empress
+dimension.echo_rift:forgotten_kingdom.level_2.name=Marble Passageways
+dimension.echo_rift:forgotten_kingdom.level_3.name=Marble Halls
+dimension.echo_rift:forgotten_kingdom.level_4.name=Marble Vaults
+dimension.echo_rift:forgotten_kingdom.level_5.name=Marble Throne
+
+### Warn
+
+dimension.warn.echo_rift:general.fail=§k---§r §cYou Failed the Raid §r§k---§r
+dimension.warn.echo_rift:general.fail.subtitle=Lost Collected Items
+
+
+
+## --------------------------------------------------
+## Entity
+## --------------------------------------------------
+
+entity.echo_rift:spacetime_rift.name=Spacetime Rift
+entity.echo_rift:return_rift.name=Return Rift
+entity.echo_rift:player_inventory.name=Player Inventory
+
+### Actions
+
+entity.action.echo_rift:interact.sacrifice_item=Sacrifice Items
+
+### Forgotten Kingdom
+
+entity.echo_rift:miner_zombie.name=Miner Zombie
+entity.echo_rift:marble_silverfish.name=Marble Silverfish
+entity.echo_rift:marble_silverfish_empress.name=Marble Silverfish Empress
+
+### Warn
+
+entity.warn.echo_rift:spacetime_rift.unstable.new=The fissure is unstable, throw in some items to stabilize it:\n
+entity.warn.echo_rift:spacetime_rift.unstable.missing=The fissure is %1% stable, still missing:\n
+entity.warn.echo_rift:spacetime_rift.unstable.complete=The fissure is stable, you have a few minutes before the memory closes!
+entity.warn.echo_rift:spacetime_rift.unstable.already_failed=You failed to conquer this memory, you can no longer enter.
+entity.warn.echo_rift:spacetime_rift.unstable.item_complete=> §aComplete§r 
+
+
+
+## --------------------------------------------------
+## Item
+## --------------------------------------------------
+
+item.bedrock_awakening:echo_rift=§kEcho Rift
+
+### Armor
+
+item.echo_rift:miner_helmet=Miner Helmet\n§9Echo Rift
+
+### Memory Fragment
+
+item.echo_rift:memory_forgotten_kingdom=Memory Fragment Forgotten Kingdom\n§9Echo Rift
+
+### Spawn Egg
+
+item.spawn_egg.entity.echo_rift:miner_zombie.name=Miner Zombie Spawn Egg
+item.spawn_egg.entity.echo_rift:marble_silverfish.name=Marble Silverfish Spawn Egg
+item.spawn_egg.entity.echo_rift:marble_silverfish_empress.name=Marble Silverfish Empress Spawn Egg
+
+### Warn
+
+## Memory Fragment
+
+item.warn.echo_rift:memory_fragment.reacting.obstructed=The fragment is unable to react to the obstructed portal
+item.warn.echo_rift:memory_fragment.reacting.success=The fragment is reacting, interacting to disrupt spacetime
+item.warn.echo_rift:memory_fragment.reacting.fail=The fragment is calm
+item.warn.echo_rift:memory_fragment.reacting.already_activated=The fragment cannot interfere with another memory
+
+
+
+## --------------------------------------------------
+## Item Catalog
+## --------------------------------------------------
+
+echo_rift:itemGroup.name.marble=Marble Blocks
+echo_rift:itemGroup.name.unbreak_blocks=Unbreak Blocks
+
+
+
+## --------------------------------------------------
+## Item Lore
+## --------------------------------------------------
+
+
+
+## --------------------------------------------------
+## Loading Messages
+## --------------------------------------------------
+
+loading_message.echo_rift:tip.wake_up=Wake Up! It's a §kEramthgin
+loading_message.echo_rift:tip.need_sacrifice=Sacrifices will be necessary
+loading_message.echo_rift:random_lines.is_an_addon=Echo Rift is an Addon
+loading_message.echo_rift:random_lines.modjam=This addon was created in 1 month for the Curseforge modjam 2026.
+
+
+
+## --------------------------------------------------
+## UI
+## --------------------------------------------------
+
+### Rift Close
+
+ui.echo_rift:rift.remove.title=Close Rift
+ui.echo_rift:rift.remove.body=Do you want to close this rift?
+ui.echo_rift:rift.remove.keep=Keep Rift
+
+### Timer
+ui.echo_rift:memory.timer=Time for Collapse
+
+
+
+pack.description=§5Endermen76428§r don't write descriptions.

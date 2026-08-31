@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@minecraft/server": "^2.8.0",
+    "@minecraft/server-ui": "^2.1.0"
+  }
+}

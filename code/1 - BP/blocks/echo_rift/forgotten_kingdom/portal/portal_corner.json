@@ -1,0 +1,19 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:forgotten_kingdom_portal_corner",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "echo_rift:portal_corner": {},
+      "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible", "echo_rift:portal_corner" ],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:forgotten_kingdom_portal_corner" } },
+      "minecraft:movable": { "movement_type": "immovable" },
+      "minecraft:light_dampening": 15,
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 300 },
+      "minecraft:destructible_by_explosion": false
+    }
+  }
+}

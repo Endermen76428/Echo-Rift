@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Echo Rift v0.1 (Texture / Alpha)",
+    "description": "pack.description",
+    "uuid": "ae620a92-840b-471d-849e-2f19a4f6a8b4",
+    "min_engine_version": [1, 26, 30],
+    "version": [0, 1, 0],
+    "pack_scope": "world"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "6557b3fc-b078-43e1-afea-9aa878b6d38b",
+      "version": [0, 1, 0]
+    }
+  ],
+  "metadata": {
+    "product_type": "addon",
+    "authors": ["§bEndermen76428§r & §5Heartiorn"],
+    "url": "https://www.curseforge.com/minecraft-bedrock/addons/travel-backpacks"
+  },
+  "capabilities": ["pbr"],
+  "dependencies": [
+    {
+      "uuid": "ac0718eb-5d69-4214-bf38-7fe6d5e867de",
+      "version": [0, 1, 0]
+    }
+  ]
+}

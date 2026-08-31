@@ -1,0 +1,22 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:spawner_miniboss",
+      "menu_category": { "category": "none" },
+      "states": { "echo_rift:spawn_level": [0, 1, 2, 3] }
+    },
+    "components": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:tags": [ "echo_rift:spawner" ],
+      // "minecraft:material_instances": { "*": { "render_method": "alpha_test", "texture": "ender_addon_pack:null" } },
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "ender_addon_pack:null" } },
+      "minecraft:movable": { "movement_type": "immovable" },
+      "minecraft:replaceable": {},
+      "minecraft:selection_box": false,
+      "minecraft:collision_box": false,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false
+    }
+  }
+}

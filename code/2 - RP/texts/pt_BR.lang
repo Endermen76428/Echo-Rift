@@ -1,0 +1,175 @@
+## --------------------------------------------------
+## Block
+## --------------------------------------------------
+
+tile.echo_rift:door.name=Porta\n§9Echo Rift
+tile.echo_rift:dark.name=Escuro\n§9Echo Rift
+tile.echo_rift:spawner.name=Gerador de Monstro\n§9Echo Rift
+tile.echo_rift:spawner_miniboss.name=Gerador de Mibi Boss\n§9Echo Rift
+
+### Forgotten Kingdom
+
+tile.echo_rift:forgotten_kingdom_portal_corner.name=Canto do Portal do Reino Esquecido\n§9Echo Rift
+tile.echo_rift:forgotten_kingdom_portal_corner_unbreak.name=Canto do Portal do Reino Esquecido
+tile.echo_rift:forgotten_kingdom_portal_frame.name=Moldura do Portal do Reino Esquecido\n§9Echo Rift
+tile.echo_rift:forgotten_kingdom_portal_frame_unbreak.name=Moldura do Portal do Reino Esquecido
+
+## Decoration
+
+tile.echo_rift:black_marble.name=Bloco de Mármore Preto\n§9Echo Rift
+tile.echo_rift:black_marble_unbreak.name=Bloco de Mármore Preto
+tile.echo_rift:black_marble_slab.name=Laje de Mármore Preto\n§9Echo Rift
+tile.echo_rift:black_marble_slab_unbreak.name=Laje de Mármore Preto
+tile.echo_rift:black_marble_slab_vertical.name=Laje Vertical de Mármore Preto\n§9Echo Rift
+tile.echo_rift:black_marble_slab_vertical_unbreak.name=Laje Vertical de Mármore Preto
+tile.echo_rift:black_marble_stairs.name=Escada de Mármore Preto\n§9Echo Rift
+tile.echo_rift:black_marble_stairs_unbreak.name=Escada de Mármore Preto
+
+tile.echo_rift:marble.name=Bloco de Mármore\n§9Echo Rift
+tile.echo_rift:marble_unbreak.name=Bloco de Mármore
+tile.echo_rift:marble_slab.name=Laje de Mármore\n§9Echo Rift
+tile.echo_rift:marble_slab_unbreak.name=Laje de Mármore
+tile.echo_rift:marble_slab_vertical.name=Laje Vertical de Mármore\n§9Echo Rift
+tile.echo_rift:marble_slab_vertical_unbreak.name=Laje Vertical de Mármore
+tile.echo_rift:marble_stairs.name=Escada de Mármore\n§9Echo Rift
+tile.echo_rift:marble_stairs_unbreak.name=Escada de Mármore
+
+tile.echo_rift:red_marble.name=Bloco de Mármore Vermelho\n§9Echo Rift
+tile.echo_rift:red_marble_unbreak.name=Bloco de Mármore Vermelho
+tile.echo_rift:red_marble_slab.name=Laje de Mármore Vermelho\n§9Echo Rift
+tile.echo_rift:red_marble_slab_unbreak.name=Laje de Mármore Vermelho
+tile.echo_rift:red_marble_slab_vertical.name=Laje Vertical de Mármore Vermelho\n§9Echo Rift
+tile.echo_rift:red_marble_slab_vertical_unbreak.name=Laje Vertical de Mármore Vermelho
+tile.echo_rift:red_marble_stairs.name=Escada de Mármore Vermelho\n§9Echo Rift
+tile.echo_rift:red_marble_stairs_unbreak.name=Escada de Mármore Vermelho
+
+## Ores
+tile.echo_rift:memory_frag_marble.name=Mármore com Fragmento de Memória\n§9Echo Rift
+tile.echo_rift:memory_frag_red_marble.name=Mármore Vermelho com Fragmento de Memória\n§9Echo Rift
+tile.echo_rift:memory_frag_black_marble.name=Mármore Preto com Fragmento de Memória\n§9Echo Rift
+
+### Sacrifice Items
+
+tile.echo_rift:marble.translate=Bloco de Mármore
+
+
+
+## --------------------------------------------------
+## Dimension
+## --------------------------------------------------
+
+dimension.echo_rift:forgotten_kingdom.level_1.name=Minas de Mármore
+dimension.echo_rift:forgotten_kingdom.level_10.name=Traça Imperatriz
+dimension.echo_rift:forgotten_kingdom.level_2.name=Corredores de Mármore
+dimension.echo_rift:forgotten_kingdom.level_3.name=Salões de Mármore
+dimension.echo_rift:forgotten_kingdom.level_4.name=Cofres de Mármore
+dimension.echo_rift:forgotten_kingdom.level_5.name=Trono de Mármore
+
+### Warn
+
+dimension.warn.echo_rift:general.fail=§k---§r §cVocê Falhou a Raid §r§k---§r
+dimension.warn.echo_rift:general.fail.subtitle=Itens coletados perdidos
+
+
+
+## --------------------------------------------------
+## Entity
+## --------------------------------------------------
+
+entity.echo_rift:spacetime_rift.name=Fissura de Espaço-Tempo
+entity.echo_rift:return_rift.name=Fissura de Retorno
+entity.echo_rift:player_inventory.name=Inventário do Jogador
+
+### Actions
+
+entity.action.echo_rift:interact.sacrifice_item=Sacrifice Items
+
+### Forgotten Kingdom
+
+entity.echo_rift:miner_zombie.name=Zumbi Minerador
+entity.echo_rift:marble_silverfish.name=Traça do Mármore
+entity.echo_rift:marble_silverfish_empress.name=Traça Imperatriz do Mármore
+
+### Warn
+
+entity.warn.echo_rift:spacetime_rift.unstable.new=A fissura está instável, jogue alguns itens para estabilizar:\n
+entity.warn.echo_rift:spacetime_rift.unstable.missing=A fissura está %1% estável, ainda falta:\n
+entity.warn.echo_rift:spacetime_rift.unstable.complete=A fissura está estável, você tem alguns minutos antes que a memória se feche!
+entity.warn.echo_rift:spacetime_rift.unstable.already_failed=Você falhou em conquistar essa memória, você não pode mais entrar!
+entity.warn.echo_rift:spacetime_rift.unstable.item_complete=> §aCompleto§r 
+
+
+
+## --------------------------------------------------
+## Item
+## --------------------------------------------------
+
+item.bedrock_awakening:echo_rift=§kEcho Rift
+
+### Armor
+
+item.echo_rift:miner_helmet=Capacete de Minerador\n§9Echo Rift
+
+### Memory Fragment
+
+item.echo_rift:memory_forgotten_kingdom=Fragmento de Memória Reino Esquecido\n§9Echo Rift
+
+### Spawn Egg
+
+item.spawn_egg.entity.echo_rift:miner_zombie.name=Ovo Gerador de Zumbi Minerador
+item.spawn_egg.entity.echo_rift:marble_silverfish.name=Ovo Gerador de Traça do Mármore
+item.spawn_egg.entity.echo_rift:marble_silverfish_empress.name=Ovo Gerador de Traça Imperatriz do Mármore
+
+### Warn
+
+## Memory Fragment
+
+item.warn.echo_rift:memory_fragment.reacting.obstructed=O fragmento não consegue reagir ao portal obstruido
+item.warn.echo_rift:memory_fragment.reacting.success=O fragmento está reagindo, use-o para rasgar o espaço-tempo
+item.warn.echo_rift:memory_fragment.reacting.fail=O fragmento está calmo
+item.warn.echo_rift:memory_fragment.reacting.already_activated=O fragmento não pode interferir com outra memória
+
+
+
+## --------------------------------------------------
+## Item Catalog
+## --------------------------------------------------
+
+echo_rift:itemGroup.name.marble=Blocos de Mármore
+echo_rift:itemGroup.name.unbreak_blocks=Blocos Inquebráveis
+
+
+
+## --------------------------------------------------
+## Item Lore
+## --------------------------------------------------
+
+
+
+## --------------------------------------------------
+## Loading Messages
+## --------------------------------------------------
+
+loading_message.echo_rift:tip.wake_up=Acorde! Isso é um §kOledasep
+loading_message.echo_rift:tip.need_sacrifice=Sacrifícios serão necessarios
+loading_message.echo_rift:random_lines.is_an_addon=Echo Rift é um Addon
+loading_message.echo_rift:random_lines.modjam=Esse addon foi criado em 1 mês para a Modjam 2026 do Curseforge
+
+
+
+## --------------------------------------------------
+## UI
+## --------------------------------------------------
+
+### Rift Close
+
+ui.echo_rift:rift.remove.title=Fechar Fenda
+ui.echo_rift:rift.remove.body=Você quer fechar essa fenda?
+ui.echo_rift:rift.remove.keep=Manter Fenda
+
+### Timer
+ui.echo_rift:memory.timer=Tempo até o Colapso
+
+
+
+pack.description=§5Endermen76428§r não escreveu a descrição.

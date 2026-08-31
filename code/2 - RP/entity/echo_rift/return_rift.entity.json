@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "echo_rift:return_rift",
+      "materials": { "default": "entity_alphatest_one_sided" },
+      "textures": { "default": "textures/echo_rift/entity/rift/return_rift" },
+      "geometry": { "default": "geometry.echo_rift.return_rift" },
+      "render_controllers": [ "controller.render.default" ]
+    }
+  }
+}

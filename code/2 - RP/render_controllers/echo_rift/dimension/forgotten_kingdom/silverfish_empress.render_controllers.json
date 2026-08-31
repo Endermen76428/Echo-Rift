@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.echo_rift.marble_silverfish_empress": {
+      "geometry": "Geometry.default",
+      "materials": [
+        { "*": "Material.default" },
+        { "crown*": "Material.body_layer" }
+      ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "es2020",
+    "moduleResolution": "bundler",
+    "target": "ES2021",
+    "lib": ["ES2021", "DOM"],
+
+    "rootDir": "./src",
+    "outDir": "../1 - BP/scripts/echo_rift",
+
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true,
+    "strictBindCallApply": true,
+    "removeComments": true
+  },
+  "include": ["src"],
+  "exclude": ["scripts"]
+}

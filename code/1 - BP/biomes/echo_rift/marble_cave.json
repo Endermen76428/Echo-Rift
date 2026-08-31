@@ -1,0 +1,52 @@
+{
+  "format_version": "1.21.111",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "echo_rift:marble_cave"
+    },
+    "components": {
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "noise_frequency_scale": 0.07,
+            "amount": 0.45,
+            "targets": [
+              "minecraft:plains",
+              "minecraft:sunflower_plains",
+              "minecraft:forest",
+              "minecraft:flower_forest",
+              "minecraft:birch_forest"
+            ]
+          }
+        ]
+      },
+      "minecraft:climate": {
+        "temperature": 0.8,
+        "downfall": 0.4,
+        "snow_accumulation": [ 0, 0.125 ]
+      },
+      "minecraft:overworld_height": { "noise_type": "lowlands" },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 7,
+          "sea_floor_material": "minecraft:gravel",
+          "foundation_material": "minecraft:stone",
+          "mid_material": "minecraft:dirt",
+          "top_material": "minecraft:grass_block",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:tags": {
+        "tags": [
+          "echo_rift:marble_cave",
+          "overworld",
+          "monster",
+          "animal",
+          "plains"
+        ]
+      }
+    }
+  }
+}

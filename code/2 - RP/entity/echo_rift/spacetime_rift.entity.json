@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "echo_rift:spacetime_rift",
+      "materials": { "default": "entity_alphatest_one_sided" },
+      "textures": {
+        "forgotten_kingdom_frag": "textures/echo_rift/items/memory/forgotten_kingdom",
+        "forgotten_kingdom_rift": "textures/echo_rift/entity/rift/forgotten_kingdom"
+      },
+      "geometry": { "default": "geometry.echo_rift.spacetime_rift" },
+      "animations": {
+        "controller_general": "controller.animation.echo_rift.spacetime_rift.general",
+
+        "opening": "animation.echo_rift.spacetime_rift.opening",
+        "closing": "animation.echo_rift.spacetime_rift.closing",
+        "removing": "animation.echo_rift.spacetime_rift.removing"
+      },
+      "scripts": {
+        "should_update_bones_and_effects_offscreen": true,
+        "scale": "1",
+        "initialize": [
+          "v.rift_x = q.position(0); v.rift_y = q.position(1); v.rift_z = q.position(2);",
+
+          "v.type = 0;",
+          "v.stable = false;",
+          "v.removing = false;",
+          "v.complete = 0;",
+
+          "v.width = 2;",
+          "v.height = 3;",
+
+          "v.width_biggest = false;",
+          "v.size = 0;",
+          "v.offset_h = 0;"
+        ],
+        "pre_animation": [
+          "v.type = q.property('echo_rift:type');",
+          "v.stable = q.property('echo_rift:stable');",
+          "v.complete = q.property('echo_rift:complete') * 0.01;",
+
+          "v.width = q.property('echo_rift:width');",
+          "v.height = q.property('echo_rift:height');",
+
+          "v.width_biggest = v.width >= v.height;",
+          "v.size = v.width_biggest ? v.height : v.width;",
+          "v.offset_h = (v.height *0.5 -0.5) * 16;"
+        ],
+        "animate": [
+          "controller_general"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.echo_rift.spacetime_rift"
+      ]
+    }
+  }
+}

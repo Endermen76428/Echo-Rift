@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "echo_rift:marble_silverfish",
+      "materials": { "default": "silverfish" },
+      "textures": { "default": "textures/echo_rift/entity/dimension/forgotten_kingdom/marble_silverfish" },
+      "geometry": { "default": "geometry.echo_rift.marble_silverfish" },
+      "scripts": { "scale": "1.5" },
+      "animations": { "move": "animation.echo_rift.marble_silverfish.move" },
+      "animation_controllers": [ { "move": "controller.animation.silverfish.move" } ],
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": { "texture": "spawn_egg_silverfish" }
+    }
+  }
+}

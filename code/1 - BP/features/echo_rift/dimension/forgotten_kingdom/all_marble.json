@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": { "identifier": "echo_rift:echo_rift/dimension/forgotten_kingdom/all_marble_feature" },
+    "features": [
+      "echo_rift:echo_rift/dimension/forgotten_kingdom/marble_feature",
+      "echo_rift:echo_rift/dimension/forgotten_kingdom/red_marble_feature",
+      "echo_rift:echo_rift/dimension/forgotten_kingdom/black_marble_feature",
+      "echo_rift:echo_rift/dimension/forgotten_kingdom/all_memory_frag_feature"
+    ]
+  }
+}

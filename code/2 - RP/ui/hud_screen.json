@@ -1,0 +1,69 @@
+{
+  "namespace": "hud",
+
+  "title_data_control": {
+    "$update_string": "replace_it",
+    "type": "panel",
+    "size": [ 0, 0 ],
+    "bindings": [
+      { "binding_name": "#hud_title_text_string" },
+      {
+        "binding_name": "#hud_title_text_string",
+        "binding_name_override": "#preserved_text",
+        "binding_condition": "visibility_changed"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not (#hud_title_text_string = #preserved_text) and not ((#hud_title_text_string - $update_string) = #hud_title_text_string))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          { "timer_data_control@hud.title_data_control": { "$update_string": "errb:" } },
+          /* { "title_data_control@hud.title_data_control": { "$update_string": "erlt:" } }, */
+          {
+            "timer_factory": {
+              "type": "panel",
+              "factory": {
+                "name": "hud_title_text_factory",
+                "control_ids": { "hud_title_text": "timer@echo_rift-timer.timer_panel" }
+              }
+            }
+          }/* ,
+          {
+            "title_factory": {
+              "type": "panel",
+              "factory": {
+                "name": "hud_title_text_factory",
+                "control_ids": { "hud_title_text": "title@echo_rift-title.title_panel" }
+              }
+            }
+          } */
+        ]
+      }
+    ]
+  },
+  "hud_title_text": {
+    "modifications": [
+      {
+        "array_name": "bindings",
+        "operation": "insert_front",
+        "value": [
+          { "binding_name": "#hud_title_text_string" },
+          {
+            "binding_type": "view",
+            "source_property_name": "(not (('%.5s' * #hud_title_text_string) = 'errb:' or ('%.5s' * #hud_title_text_string) = 'erlt:'))",
+            "target_property_name": "#visible"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.echo_rift.spacetime_rift",
+        "texture_width": 16,
+        "texture_height": 16,
+        "visible_bounds_width": 14,
+        "visible_bounds_height": 19,
+        "visible_bounds_offset": [0, 3.5, 0]
+      },
+      "bones": [
+        {
+          "name": "all",
+          "pivot": [0, 0, 0]
+        },
+        {
+          "name": "rift",
+          "parent": "all",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [0, 0, -8],
+              "size": [0, 16, 16],
+              "uv": {
+                "east": {"uv": [0, 0], "uv_size": [16, 16]},
+                "west": {"uv": [0, 0], "uv_size": [16, 16]}
+              }
+            }
+          ]
+        },
+        {
+          "name": "frag",
+          "parent": "all",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            {
+              "origin": [0, 0, -8],
+              "size": [0, 16, 16],
+              "uv": {
+                "east": {"uv": [0, 0], "uv_size": [16, 16]},
+                "west": {"uv": [0, 0], "uv_size": [16, 16]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

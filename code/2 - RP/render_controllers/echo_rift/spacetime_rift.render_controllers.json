@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.echo_rift.spacetime_rift": {
+      "arrays": {
+        "textures": {
+          "Array.rift": [
+            "Texture.forgotten_kingdom_frag",
+            "Texture.forgotten_kingdom_rift"
+          ]
+          /* Acho-que-da-pra-colocar-dois-arrays-de-textura-ai-não-precisa-se-preocupar-com-a-matematica-ali-em-baixo */
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "array.rift[v.stable ? v.type +1 : v.type]" ], /*A-soma-é-a-metade-da-quantia-de-texturas*/
+      "ignore_lighting": true,
+      "part_visibility": [
+        { "rift": "v.stable" },
+        { "frag": "!v.stable" }
+      ]
+    }
+  }
+}

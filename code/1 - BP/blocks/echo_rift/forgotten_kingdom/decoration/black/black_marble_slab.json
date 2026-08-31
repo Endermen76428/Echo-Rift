@@ -1,0 +1,44 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:black_marble_slab",
+      "menu_category": { "category": "construction" },
+      "traits": { "minecraft:placement_position": { "enabled_states": ["minecraft:vertical_half"] } }
+    },
+    "components": {
+      "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible" ],
+      "minecraft:geometry": {
+        "identifier": "geometry.echo_rift.slab",
+        "bone_visibility": {
+          "bottom": "q.block_state('minecraft:vertical_half') == 'bottom'",
+          "top": "q.block_state('minecraft:vertical_half') == 'top'"
+        }
+      },
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:black_marble" } },
+      "minecraft:item_visual": {
+        "geometry": { "identifier": "geometry.echo_rift.slab.visual" },
+        "material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:black_marble" } }
+      },
+      "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 7 }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
+        "components": {
+          "minecraft:selection_box": { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 16 ] },
+          "minecraft:collision_box": { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 16 ] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'top'",
+        "components": {
+          "minecraft:selection_box": { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 16 ] },
+          "minecraft:collision_box": { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 16 ] }
+        }
+      }
+    ]
+  }
+}

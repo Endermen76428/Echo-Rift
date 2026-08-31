@@ -1,0 +1,8 @@
+import "./inventoryChange";
+import "./interactEntity";
+import "./hotbarChange";
+import "./playerSpawn";
+import "./scriptEvent";
+import "./entityHurt";
+import "./hitEntity";
+import "./startUp";

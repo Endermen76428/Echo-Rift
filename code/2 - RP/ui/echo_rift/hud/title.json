@@ -1,0 +1,59 @@
+{
+  "namespace": "echo_rift-title",
+
+  "anim_timer_fade": {
+    "anim_type": "alpha",
+    "easing": "in_expo",
+    "duration": 1,
+    "from": 1,
+    "to": 0,
+    "destroy_at_end": "title_panel",
+    "end_event": "hud_actionbar_text_complete"
+  },
+
+  "title_panel": {
+    "type": "panel",
+    "alpha": "@echo_rift-title.anim_timer_fade",
+    "propagate_alpha": true,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "title_data_control",
+        "source_property_name": "#preserved_text",
+        "target_property_name": "#info"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(('%.5s' * #info) = 'erlt:')",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "title_label": {
+          "type": "label",
+          "text": "#text",
+          "localize": true,
+          "font_size": "extra_large",
+          "offset": [ 0, -7 ],
+          "anchor_from": "center",
+          "anchor_to": "bottom_middle",
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "title_data_control",
+              "source_property_name": "#preserved_text",
+              "target_property_name": "#info"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#info - ('%.5s' * #info))",
+              "target_property_name": "#text"
+            }
+          ]
+        }
+      }
+    ]
+  }
+
+}
