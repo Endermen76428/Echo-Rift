@@ -22,5 +22,4 @@ Biome:
   - Forgotten Kingdom Portal is a new structure found on Marble Cave Biome.
 
 mklink /J "%AppData%\Minecraft Bedrock\Users\Shared\games\com.mojang\development_behavior_packs/Echo Rift (Addon)" "C:\Backup\0 - MCPEDL\0 - GITHUB\Echo Rift\code\1 - BP"
-
 mklink /J "%AppData%\Minecraft Bedrock\Users\Shared\games\com.mojang\development_resource_packs/Echo Rift (Texture)" "C:\Backup\0 - MCPEDL\0 - GITHUB\Echo Rift\code\2 - RP"
