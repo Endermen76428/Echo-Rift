@@ -8,11 +8,9 @@
     },
     "components": {
       "minecraft:geometry": {
-        "identifier": "geometry.echo_rift.slab",
-        "bone_visibility": {
-          "bottom": "q.block_state('minecraft:vertical_half') == 'bottom'",
-          "top": "q.block_state('minecraft:vertical_half') == 'top'"
-        }
+        "identifier": "geometry.echo_rift.slab_bottom",
+        "culling": "echo_rift:slab",
+        "culling_shape": "echo_rift:slab"
       },
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:black_marble" } },
       "minecraft:item_visual": {
@@ -28,6 +26,11 @@
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
         "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.echo_rift.slab_bottom",
+            "culling": "echo_rift:slab",
+            "culling_shape": "echo_rift:slab"
+          },
           "minecraft:selection_box": { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 16 ] },
           "minecraft:collision_box": { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 16 ] }
         }
@@ -35,6 +38,11 @@
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'top'",
         "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.echo_rift.slab_top",
+            "culling": "echo_rift:slab_top",
+            "culling_shape": "echo_rift:slab_top"
+          },
           "minecraft:selection_box": { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 16 ] },
           "minecraft:collision_box": { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 16 ] }
         }

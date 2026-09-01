@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "echo_rift:guidebook",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "echo_rift:guidebook": {},
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "echo_rift:guidebook"
+    }
+  }
+}

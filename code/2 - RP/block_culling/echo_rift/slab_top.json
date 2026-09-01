@@ -27,8 +27,7 @@
       },
       {
         "geometry_part": { "bone": "top", "cube": 0, "face": "up" },
-        "direction": "up",
-        "condition": "same_block_permutation"
+        "direction": "up"
       }
     ]
   }

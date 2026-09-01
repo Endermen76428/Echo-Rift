@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": { "identifier": "echo_rift:guidebook" },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      { "item": "minecraft:book" },
+      { "tag": "echo_rift:memory" }
+    ],
+    "unlock": [
+      { "item": "minecraft:book" },
+      { "tag": "echo_rift:memory" }
+    ],
+    "result": { "item": "echo_rift:guidebook" }
+  }
+}

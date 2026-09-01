@@ -105,6 +105,7 @@ entity.warn.echo_rift:spacetime_rift.unstable.item_complete=> §aComplete§r
 ## --------------------------------------------------
 
 item.bedrock_awakening:echo_rift=§kEcho Rift
+item.echo_rift:guidebook=Guide Book\n§9Echo Rift
 
 ### Armor
 

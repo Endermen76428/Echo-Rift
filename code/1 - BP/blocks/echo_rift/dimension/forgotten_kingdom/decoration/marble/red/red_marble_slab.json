@@ -8,10 +8,9 @@
     },
     "components": {
       "minecraft:geometry": {
-        "identifier": "geometry.echo_rift.slab",
+        "identifier": "geometry.echo_rift.slab_bottom",
         "culling": "echo_rift:slab",
-        "culling_shape": "echo_rift:slab",
-        "bone_visibility": { "bottom": "true", "top": "false" }
+        "culling_shape": "echo_rift:slab"
       },
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:red_marble" } },
       "minecraft:item_visual": {

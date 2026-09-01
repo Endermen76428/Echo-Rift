@@ -3,6 +3,7 @@
   "texture_name": "atlas.items",
   "texture_data": {
     "ender_addon_pack:null": { "textures": "textures/null" },
+    "echo_rift:guidebook": { "textures": "textures/echo_rift/items/guidebook" },
 
     // Armors
     "echo_rift:miner_helmet": { "textures": "textures/echo_rift/items/armor/miner_helmet" },
