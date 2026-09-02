@@ -14,22 +14,7 @@
     },
     "components": {
       "minecraft:tags": [ "bedrock_awakening:stairs" ],
-      "minecraft:geometry": {
-        "identifier": "geometry.echo_rift.stairs",
-        "bone_visibility": {
-          "top": "q.block_state('minecraft:vertical_half') == 'top'",
-          "obright": "q.block_state('minecraft:vertical_half') == 'top' && (q.block_state('minecraft:corner') == 'none' || q.block_state('minecraft:corner') == 'outer_right' || q.block_state('minecraft:corner') == 'inner_right' || q.block_state('minecraft:corner') == 'inner_left')",
-          "obleft": "q.block_state('minecraft:vertical_half') == 'top' && (q.block_state('minecraft:corner') == 'none' || q.block_state('minecraft:corner') == 'outer_left' || q.block_state('minecraft:corner') == 'inner_right' || q.block_state('minecraft:corner') == 'inner_left')",
-          "ibright": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:corner') == 'inner_right'",
-          "ibleft": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:corner') == 'inner_left'",
-
-          "bottom": "q.block_state('minecraft:vertical_half') == 'bottom'",
-          "otright": "q.block_state('minecraft:vertical_half') == 'bottom' && (q.block_state('minecraft:corner') == 'none' || q.block_state('minecraft:corner') == 'outer_right' || q.block_state('minecraft:corner') == 'inner_right' || q.block_state('minecraft:corner') == 'inner_left')",
-          "otleft": "q.block_state('minecraft:vertical_half') == 'bottom' && (q.block_state('minecraft:corner') == 'none' || q.block_state('minecraft:corner') == 'outer_left' || q.block_state('minecraft:corner') == 'inner_right' || q.block_state('minecraft:corner') == 'inner_left')",
-          "itright": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:corner') == 'inner_right'",
-          "itleft": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:corner') == 'inner_left'"
-        }
-      },
+      "minecraft:geometry": "geometry.echo_rift.stairs_bottom_none",
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble" } },
       "minecraft:item_visual": {
         "geometry": { "identifier": "geometry.echo_rift.stairs.visual" },
