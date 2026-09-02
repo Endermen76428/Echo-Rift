@@ -20,6 +20,7 @@ Items:
     - You can craft a Guide Book with a Book and any Memory.
   > Memories:
     - Memory Fragments Forgotten Kingdom were renamed to "Memory of Forgotten Kingdom", to avoid confusion with the new items.
+    - Change the Memory item texture.
     - Added the Memory Fragment of Forgotten Kingdom item as an previous veriosn of the Memory of Forgotten Kingdom item.
     - Using nine of any memory fragment you can create a Complete Memory.
 
