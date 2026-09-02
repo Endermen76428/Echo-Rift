@@ -1,0 +1,11 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "echo_rift:red_marble_slab" },
+    "tags": [ "crafting_table" ],
+    "pattern": [ "MMM" ],
+    "key": { "M": { "item": "echo_rift:red_marble" } },
+    "unlock": [ { "item": "echo_rift:red_marble" } ],
+    "result": { "item": "echo_rift:red_marble_slab", "count": 6 }
+  }
+}

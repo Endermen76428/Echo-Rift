@@ -1,0 +1,10 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shapeless": {
+    "description": { "identifier": "echo_rift:black_marble_slab_vertical_from_slab" },
+    "tags": [ "crafting_table" ],
+    "ingredients": [ { "item": "echo_rift:black_marble_slab" } ],
+    "unlock": [ { "item": "echo_rift:black_marble" } ],
+    "result": { "item": "echo_rift:black_marble_slab_vertical" }
+  }
+}
