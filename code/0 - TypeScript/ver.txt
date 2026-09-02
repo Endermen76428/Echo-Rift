@@ -4,8 +4,10 @@ fazer um sistema que da gera as escadarias do miniboss sempre em direção ao le
 se o player sair do mapa e o outro continuar jogando iniciando outra raid na dimensão o backup do player que não voltou a jogar acaba sumindo
 
 Echo Rift v0.1.1 Alpha
-
 > Features:
+Blocks:
+  > Marble:
+    - Added crafts to Slabs, Vertical Slabs and Stairs in all marble variations.
 Items:
   > Guide Book:
     - When it's your first time using the addon you will receive a Guide Book.
@@ -14,14 +16,15 @@ Items:
 > Fixed Features:
 Blocks:
   > Voxel Shapes:
-    - Blocks of Marble and their variations had their voxel shape changed to the blocks of:
+    - Blocks of Marble and their variations had their Voxel Shape changed to the blocks of:
       - Slabs;
       - Vertical Slabs;
       - Stairs.
     - Red Marble Slabs no longer disappear when placed one on top of the other;
 
-Echo Rift v0.1.0 Alpha
 
+
+Echo Rift v0.1.0 Alpha
 > Features
 Biome:
   > Marble Caves:
