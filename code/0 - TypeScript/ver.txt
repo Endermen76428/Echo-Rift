@@ -8,12 +8,22 @@ Echo Rift v0.1.1 Alpha
 Blocks:
   > Marble:
     - Added crafts to Slabs, Vertical Slabs and Stairs in all marble variations.
+    - Memory Fragment Ores had the loot table changed:
+      - Now it drop Memory Fragments instead of the Complete Memory;
+      - No Enchant: 1 - 3 Fragments;
+      - Fortune I: 1 - 5 Fragments;
+      - Fortune II: 1 - 7 Fragments;
+      - Fortune III: 1 - 9 Fragments.
 Items:
   > Guide Book:
     - When it's your first time using the addon you will receive a Guide Book.
     - You can craft a Guide Book with a Book and any Memory.
+  > Memories:
+    - Memory Fragments Forgotten Kingdom were renamed to "Memory of Forgotten Kingdom", to avoid confusion with the new items.
+    - Added the Memory Fragment of Forgotten Kingdom item as an previous veriosn of the Memory of Forgotten Kingdom item.
+    - Using nine of any memory fragment you can create a Complete Memory.
 
-> Fixed Features:
+> Bug Fix:
 Blocks:
   > Voxel Shapes:
     - Blocks of Marble and their variations had their Voxel Shape changed to the blocks of:

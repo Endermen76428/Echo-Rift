@@ -9,6 +9,7 @@
     "echo_rift:miner_helmet": { "textures": "textures/echo_rift/items/armor/miner_helmet" },
 
     // Memory Fragment
-    "echo_rift:memory_forgotten_kingdom": { "textures": "textures/echo_rift/items/memory/forgotten_kingdom" }
+    "echo_rift:memory_forgotten_kingdom": { "textures": "textures/echo_rift/items/memory/forgotten_kingdom" },
+    "echo_rift:memory_frag_forgotten_kingdom": { "textures": "textures/echo_rift/items/memory/forgotten_kingdom_frag" }
   }
 }

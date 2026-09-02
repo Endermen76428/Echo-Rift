@@ -113,7 +113,8 @@ item.echo_rift:miner_helmet=Capacete de Minerador\n§9Echo Rift
 
 ### Memory Fragment
 
-item.echo_rift:memory_forgotten_kingdom=Fragmento de Memória Reino Esquecido\n§9Echo Rift
+item.echo_rift:memory_forgotten_kingdom=Memória do Reino Esquecido\n§9Echo Rift
+item.echo_rift:memory_frag_forgotten_kingdom=Fragmento de Memória do Reino Esquecido\n§9Echo Rift
 
 ### Spawn Egg
 
@@ -136,8 +137,14 @@ item.warn.echo_rift:memory_fragment.reacting.already_activated=O fragmento não 
 ## Item Catalog
 ## --------------------------------------------------
 
+## Construction
+
 echo_rift:itemGroup.name.marble=Blocos de Mármore
 echo_rift:itemGroup.name.unbreak_blocks=Blocos Inquebráveis
+
+## Items
+
+echo_rift:itemGroup.name.memories=Memórias
 
 
 

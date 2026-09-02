@@ -1,0 +1,14 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "echo_rift:memory_frag_forgotten_kingdom",
+      "menu_category": { "category": "items" }
+    },
+    "components": {
+      "echo_rift:memory_fragment": {},
+      "minecraft:tags": { "tags": [ "echo_rift:memory_frag" ] },
+      "minecraft:icon": "echo_rift:memory_frag_forgotten_kingdom"
+    }
+  }
+}

@@ -44,6 +44,19 @@
             ]
           }
         ]
+      },
+
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": { "name": "echo_rift:itemGroup.name.memories", "icon": "echo_rift:memory_forgotten_kingdom" },
+            "items": [
+              "echo_rift:memory_frag_forgotten_kingdom",
+              "echo_rift:memory_forgotten_kingdom"
+            ]
+          }
+        ]
       }
     ]
   }
