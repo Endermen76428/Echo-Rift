@@ -8,7 +8,11 @@
     },
     "components": {
       "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible" ],
-      "minecraft:geometry": "geometry.echo_rift.slab_vertical",
+      "minecraft:geometry": {
+        "identifier": "geometry.echo_rift.slab_vertical",
+        "culling": "echo_rift:slab_vertical",
+        "culling_shape": "echo_rift:slab_vertical"
+      },
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:red_marble" } },
       "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
       "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
