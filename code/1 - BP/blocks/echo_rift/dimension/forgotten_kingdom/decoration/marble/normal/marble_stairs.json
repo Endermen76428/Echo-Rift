@@ -130,6 +130,11 @@
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:corner') == 'inner_right'",
         "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.echo_rift.stairs_bottom_inner_right",
+            "culling": "echo_rift:stairs_bottom_inner_right",
+            "culling_shape": "echo_rift:stairs_bottom_inner_right"
+          },
           "minecraft:collision_box": [
             { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 16 ] },
             { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 8 ] },
@@ -140,6 +145,11 @@
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:corner') == 'inner_right'",
         "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.echo_rift.stairs_top_inner_right",
+            "culling": "echo_rift:stairs_top_inner_right",
+            "culling_shape": "echo_rift:stairs_top_inner_right"
+          },
           "minecraft:collision_box": [
             { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 16 ] },
             { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 8 ] },
@@ -150,6 +160,11 @@
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:corner') == 'inner_left'",
         "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.echo_rift.stairs_bottom_inner_left",
+            "culling": "echo_rift:stairs_bottom_inner_left",
+            "culling_shape": "echo_rift:stairs_bottom_inner_left"
+          },
           "minecraft:collision_box": [
             { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 16 ] },
             { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 8 ] },
@@ -160,6 +175,11 @@
       {
         "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:corner') == 'inner_left'",
         "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.echo_rift.stairs_top_inner_left",
+            "culling": "echo_rift:stairs_top_inner_left",
+            "culling_shape": "echo_rift:stairs_top_inner_left"
+          },
           "minecraft:collision_box": [
             { "origin": [ -8, 8, -8 ], "size": [ 16, 8, 16 ] },
             { "origin": [ -8, 0, -8 ], "size": [ 16, 8, 8 ] },
