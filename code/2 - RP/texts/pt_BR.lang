@@ -107,6 +107,26 @@ entity.warn.echo_rift:spacetime_rift.unstable.item_complete=> §aCompleto§r
 item.bedrock_awakening:echo_rift=§kEcho Rift
 item.echo_rift:guidebook=Livro Guia\n§9Echo Rift
 
+#### Blocks
+### Forgotten Kingdom
+
+## Decoration
+
+item.echo_rift:black_marble_slab=Laje de Mármore Preto\n§9Echo Rift
+item.echo_rift:black_marble_slab_unbreak=Laje de Mármore Preto
+item.echo_rift:black_marble_slab_vertical=Laje Vertical de Mármore Preto\n§9Echo Rift
+item.echo_rift:black_marble_slab_vertical_unbreak=Laje Vertical de Mármore Preto
+
+item.echo_rift:marble_slab=Laje de Mármore\n§9Echo Rift
+item.echo_rift:marble_slab_unbreak=Laje de Mármore
+item.echo_rift:marble_slab_vertical=Laje Vertical de Mármore\n§9Echo Rift
+item.echo_rift:marble_slab_vertical_unbreak=Laje Vertical de Mármore
+
+item.echo_rift:red_marble_slab=Laje de Mármore Vermelho\n§9Echo Rift
+item.echo_rift:red_marble_slab_unbreak=Laje de Mármore Vermelho
+item.echo_rift:red_marble_slab_vertical=Laje Vertical de Mármore Vermelho\n§9Echo Rift
+item.echo_rift:red_marble_slab_vertical_unbreak=Laje Vertical de Mármore Vermelho
+
 ### Armor
 
 item.echo_rift:miner_helmet=Capacete de Minerador\n§9Echo Rift

@@ -7,7 +7,7 @@
       "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } }
     },
     "components": {
-      "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible" ],
+      "minecraft:tags": [ "bedrock_awakening:slab_vertical", "minecraft:is_pickaxe_item_destructible" ],
       "minecraft:geometry": {
         "identifier": "geometry.echo_rift.slab_vertical",
         "culling": "echo_rift:slab_vertical",

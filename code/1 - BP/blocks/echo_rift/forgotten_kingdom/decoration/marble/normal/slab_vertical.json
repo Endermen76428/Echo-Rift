@@ -2,21 +2,21 @@
   "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
-      "identifier": "echo_rift:red_marble_slab_vertical_unbreak",
+      "identifier": "echo_rift:marble_slab_vertical",
       "menu_category": { "category": "construction" },
       "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } }
     },
     "components": {
+      "minecraft:tags": [ "bedrock_awakening:slab_vertical", "minecraft:is_pickaxe_item_destructible" ],
       "minecraft:geometry": {
         "identifier": "geometry.echo_rift.slab_vertical",
         "culling": "echo_rift:slab_vertical",
         "culling_shape": "echo_rift:slab_vertical"
       },
-      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:red_marble" } },
-      "minecraft:movable": { "movement_type": "immovable" },
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble" } },
       "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
-      "minecraft:destructible_by_mining": false,
-      "minecraft:destructible_by_explosion": false,
+      "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 7 },
       "minecraft:selection_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] },
       "minecraft:collision_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] }
     },

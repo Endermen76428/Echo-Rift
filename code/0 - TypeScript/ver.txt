@@ -1,7 +1,8 @@
-Se sair do mapa proximo a uma fenda o interval de verificar os itens é , acho que da pra revolver so no player spawn e verificar se tem um rift perto dele pra reinicializar, já que ele se concertá quando se afasta e volta
-as vezes da um erro no spawnEntity do backup do inventario, mas não parece que continua dando spawn nela, não sei se é muito problema
+Se sair do mapa proximo a uma fenda o interval de verificar os itens é parado, acho que da pra revolver so no player spawn e verificar se tem um rift perto dele pra reinicializar, já que ele se concertá quando se afasta e volta
+as vezes da um erro no spawnEntity do backup do inventario, mas parece que continua dando spawn nela, não sei se é muito problema
 fazer um sistema que da gera as escadarias do miniboss sempre em direção ao leste pra que sempre avance para frente evitando tambem que a sala dos miniboss não possam ser colocadas pelo tamanho
 se o player sair do mapa e o outro continuar jogando iniciando outra raid na dimensão o backup do player que não voltou a jogar acaba sumindo
+arrumar todas as loot_tables dos blocos de marmore, pois é possivel pergar ele usando as mão
 
 Echo Rift v0.1.1 Alpha
 > Features:
@@ -14,6 +15,8 @@ Blocks:
       - Fortune I: 1 - 5 Fragments;
       - Fortune II: 1 - 7 Fragments;
       - Fortune III: 1 - 9 Fragments.
+    - Marble Slabs can now be stacked;
+    - Vertical Marble Slabs can now be stacked;
 Items:
   > Guide Book:
     - When it's your first time using the addon you will receive a Guide Book.

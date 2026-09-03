@@ -1,4 +1,4 @@
-import { Dimension, EntityComponentTypes, EquipmentSlot, ScoreboardObjective, system, world } from "@minecraft/server"
+import { Dimension, Direction, EntityComponentTypes, EquipmentSlot, ScoreboardObjective, system, Vector3, world } from "@minecraft/server"
 import { addPlayerHoldListen, THoldTypes } from "../functions/holdItem/holdController"
 import { addRiftListener } from "../functions/rift/spaceTimeListener"
 import { startUpCacheFromScore } from "../functions/startUp"
@@ -67,6 +67,15 @@ export const RiftLevelNames: { [key: string]: string[] } = {
     "dimension.echo_rift:forgotten_kingdom.level_4.name",
     "dimension.echo_rift:forgotten_kingdom.level_5.name"
   ]
+}
+
+export const BlocksOffsetDirection: Record<Direction, Vector3> = {
+  "North": { x:  0, y:  0, z: -1 },
+  "South": { x:  0, y:  0, z:  1 },
+  "East":  { x:  1, y:  0, z:  0 },
+  "West":  { x: -1, y:  0, z:  0 },
+  "Up":    { x:  0, y:  1, z:  0 },
+  "Down":  { x:  0, y: -1, z:  0 }
 }
 
 

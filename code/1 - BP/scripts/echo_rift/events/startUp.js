@@ -1,7 +1,8 @@
 import { holdMomeryFragment } from "../functions/holdItem/memoryFragment";
-import { EntityComponentTypes, system } from "@minecraft/server";
+import { EntityComponentTypes, Player, system } from "@minecraft/server";
 import { openDoor } from "../functions/memory/open_door";
 import { guidebook } from "../functions/guidebook/guidebook";
+import { placeSlab } from "../functions/build/slabs";
 system.beforeEvents.startup.subscribe(({ blockComponentRegistry: customB, itemComponentRegistry: customI, dimensionRegistry: customD }) => {
     customD.registerCustomDimension("echo_rift:forgotten_kingdom");
     customB.registerCustomComponent("echo_rift:portal_corner", {
@@ -30,8 +31,10 @@ system.beforeEvents.startup.subscribe(({ blockComponentRegistry: customB, itemCo
         }
     });
     customI.registerCustomComponent("echo_rift:slab", {
-        onUseOn: ({ source, block, blockFace, faceLocation }) => {
-            console.warn(blockFace, JSON.stringify(faceLocation));
+        onUseOn: ({ source, itemStack, block, blockFace, faceLocation }) => {
+            if (!(source instanceof Player))
+                return;
+            placeSlab(source, itemStack, block, blockFace, faceLocation);
         }
     });
 });

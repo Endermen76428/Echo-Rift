@@ -56,6 +56,14 @@ export const RiftLevelNames = {
         "dimension.echo_rift:forgotten_kingdom.level_5.name"
     ]
 };
+export const BlocksOffsetDirection = {
+    "North": { x: 0, y: 0, z: -1 },
+    "South": { x: 0, y: 0, z: 1 },
+    "East": { x: 1, y: 0, z: 0 },
+    "West": { x: -1, y: 0, z: 0 },
+    "Up": { x: 0, y: 1, z: 0 },
+    "Down": { x: 0, y: -1, z: 0 }
+};
 const maxDimensions = 1;
 export const dimensionsByIndex = Array.from({ length: maxDimensions });
 export const memoryScoreIndex = Array.from({ length: maxDimensions });

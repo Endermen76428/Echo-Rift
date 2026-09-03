@@ -20,8 +20,8 @@ tile.echo_rift:black_marble.name=Black Marble Block\n§9Echo Rift
 tile.echo_rift:black_marble_unbreak.name=Black Marble Block
 tile.echo_rift:black_marble_slab.name=Black Marble Slab\n§9Echo Rift
 tile.echo_rift:black_marble_slab_unbreak.name=Black Marble Slab
-tile.echo_rift:black_marble_slab_vertical.name=Black Marble Slab Vertical\n§9Echo Rift
-tile.echo_rift:black_marble_slab_vertical_unbreak.name=Black Marble Slab Vertical
+tile.echo_rift:black_marble_slab_vertical.name=Vertical Black Marble Slab\n§9Echo Rift
+tile.echo_rift:black_marble_slab_vertical_unbreak.name=Vertical Black Marble Slab
 tile.echo_rift:black_marble_stairs.name=Black Marble Stairs\n§9Echo Rift
 tile.echo_rift:black_marble_stairs_unbreak.name=Black Marble Stairs
 
@@ -29,8 +29,8 @@ tile.echo_rift:marble.name=Marble Block\n§9Echo Rift
 tile.echo_rift:marble_unbreak.name=Marble Block
 tile.echo_rift:marble_slab.name=Marble Slab\n§9Echo Rift
 tile.echo_rift:marble_slab_unbreak.name=Marble Slab
-tile.echo_rift:marble_slab_vertical.name=Marble Slab Vertical\n§9Echo Rift
-tile.echo_rift:marble_slab_vertical_unbreak.name=Marble Slab Vertical
+tile.echo_rift:marble_slab_vertical.name=Vertical Marble Slab\n§9Echo Rift
+tile.echo_rift:marble_slab_vertical_unbreak.name=Vertical Marble Slab
 tile.echo_rift:marble_stairs.name=Marble Stairs\n§9Echo Rift
 tile.echo_rift:marble_stairs_unbreak.name=Marble Stairs
 
@@ -38,8 +38,8 @@ tile.echo_rift:red_marble.name=Red Marble Block\n§9Echo Rift
 tile.echo_rift:red_marble_unbreak.name=Red Marble Block
 tile.echo_rift:red_marble_slab.name=Red Marble Slab\n§9Echo Rift
 tile.echo_rift:red_marble_slab_unbreak.name=Red Marble Slab
-tile.echo_rift:red_marble_slab_vertical.name=Red Marble Slab Vertical\n§9Echo Rift
-tile.echo_rift:red_marble_slab_vertical_unbreak.name=Red Marble Slab Vertical
+tile.echo_rift:red_marble_slab_vertical.name=Vertical Red Marble Slab\n§9Echo Rift
+tile.echo_rift:red_marble_slab_vertical_unbreak.name=Vertical Red Marble Slab
 tile.echo_rift:red_marble_stairs.name=Red Marble Stairs\n§9Echo Rift
 tile.echo_rift:red_marble_stairs_unbreak.name=Red Marble Stairs
 
@@ -114,18 +114,18 @@ item.echo_rift:guidebook=Guide Book\n§9Echo Rift
 
 item.echo_rift:black_marble_slab=Black Marble Slab\n§9Echo Rift
 item.echo_rift:black_marble_slab_unbreak=Black Marble Slab
-item.echo_rift:black_marble_slab_vertical=Black Marble Slab Vertical\n§9Echo Rift
-item.echo_rift:black_marble_slab_vertical_unbreak=Black Marble Slab Vertical
+item.echo_rift:black_marble_slab_vertical=Vertical Black Marble Slab\n§9Echo Rift
+item.echo_rift:black_marble_slab_vertical_unbreak=Vertical Black Marble Slab
 
 item.echo_rift:marble_slab=Marble Slab\n§9Echo Rift
 item.echo_rift:marble_slab_unbreak=Marble Slab
-item.echo_rift:marble_slab_vertical=Marble Slab Vertical\n§9Echo Rift
-item.echo_rift:marble_slab_vertical_unbreak=Marble Slab Vertical
+item.echo_rift:marble_slab_vertical=Vertical Marble Slab\n§9Echo Rift
+item.echo_rift:marble_slab_vertical_unbreak=Vertical Marble Slab
 
 item.echo_rift:red_marble_slab=Red Marble Slab\n§9Echo Rift
 item.echo_rift:red_marble_slab_unbreak=Red Marble Slab
-item.echo_rift:red_marble_slab_vertical=Red Marble Slab Vertical\n§9Echo Rift
-item.echo_rift:red_marble_slab_vertical_unbreak=Red Marble Slab Vertical
+item.echo_rift:red_marble_slab_vertical=Vertical Red Marble Slab\n§9Echo Rift
+item.echo_rift:red_marble_slab_vertical_unbreak=Vertical Red Marble Slab
 
 ### Armor
 

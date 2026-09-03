@@ -2,21 +2,22 @@
   "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
-      "identifier": "echo_rift:marble_slab",
+      "identifier": "echo_rift:red_marble_slab",
       "menu_category": { "category": "construction" },
-      "traits": { "minecraft:placement_position": { "enabled_states": ["minecraft:vertical_half"] } }
+      "traits": { "minecraft:placement_position": { "enabled_states": ["minecraft:vertical_half"] } },
+      "states": { "bacs:double_slab": [false, true] }
     },
     "components": {
-      "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible" ],
+      "minecraft:tags": [ "bedrock_awakening:slab", "minecraft:is_pickaxe_item_destructible" ],
       "minecraft:geometry": {
         "identifier": "geometry.echo_rift.slab_bottom",
         "culling": "echo_rift:slab",
         "culling_shape": "echo_rift:slab"
       },
-      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble" } },
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:red_marble" } },
       "minecraft:item_visual": {
         "geometry": { "identifier": "geometry.echo_rift.slab.visual" },
-        "material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble" } }
+        "material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:red_marble" } }
       },
       "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
       "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
@@ -24,7 +25,16 @@
     },
     "permutations": [
       {
-        "condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
+        "condition": "q.block_state('bacs:double_slab') == true",
+        "components": {
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:light_dampening": 15,
+          "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/decoration/marble/red/double_slab.json"
+        }
+      },
+
+      {
+        "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('bacs:double_slab') == false",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.echo_rift.slab_bottom",
@@ -36,7 +46,7 @@
         }
       },
       {
-        "condition": "q.block_state('minecraft:vertical_half') == 'top'",
+        "condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('bacs:double_slab') == false",
         "components": {
           "minecraft:geometry": {
             "identifier": "geometry.echo_rift.slab_top",

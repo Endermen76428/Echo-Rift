@@ -1,14 +1,16 @@
-import { world, EntityComponentTypes, Player, EquipmentSlot } from "@minecraft/server"
+import { world, EntityComponentTypes, Player, EquipmentSlot, GameMode } from "@minecraft/server"
 
 export const apiEquippable = new class ApiEquippable {
-  decrement(player: Player, slot: EquipmentSlot, same?: string): void {
+  decrement(player: Player, slot: EquipmentSlot, same?: string): boolean {
+    if(player.getGameMode() == GameMode.Creative) return true
+
     const equippable = player.getComponent(EntityComponentTypes.Equippable)
-    if(!equippable) return
+    if(!equippable) return false
 
     const hand = equippable.getEquipment(slot)
-    if(!hand) return
+    if(!hand) return false
 
-    if(same && hand.typeId != same) return
+    if(same && hand.typeId != same) return false
 
     if(hand.amount -1 < 1){
       equippable.setEquipment(slot, undefined)
@@ -16,5 +18,7 @@ export const apiEquippable = new class ApiEquippable {
       hand.amount--
       equippable.setEquipment(slot, hand)
     }
+
+    return true
   }
 }

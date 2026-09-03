@@ -14,10 +14,12 @@
   "echo_rift:marble_slab": { "sound": "calcite" },
   "echo_rift:marble_slab_vertical": { "sound": "calcite" },
   "echo_rift:marble_stairs": { "sound": "calcite" },
+
   "echo_rift:red_marble": { "sound": "calcite" },
   "echo_rift:red_marble_slab": { "sound": "calcite" },
   "echo_rift:red_marble_slab_vertical": { "sound": "calcite" },
   "echo_rift:red_marble_stairs": { "sound": "calcite" },
+
   "echo_rift:black_marble": { "sound": "calcite" },
   "echo_rift:black_marble_slab": { "sound": "calcite" },
   "echo_rift:black_marble_slab_vertical": { "sound": "calcite" },
@@ -28,6 +30,7 @@
   "echo_rift:memory_frag_red_marble": { "sound": "calcite" },
   "echo_rift:memory_frag_black_marble": { "sound": "calcite" },
 
+  // Dimension
   "echo_rift:door": { "sound": "wood" },
 
   "echo_rift:marble_unbreak": { "sound": "calcite" },
