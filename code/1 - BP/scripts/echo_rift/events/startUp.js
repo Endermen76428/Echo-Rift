@@ -29,4 +29,9 @@ system.beforeEvents.startup.subscribe(({ blockComponentRegistry: customB, itemCo
             }
         }
     });
+    customI.registerCustomComponent("echo_rift:slab", {
+        onUseOn: ({ source, block, blockFace, faceLocation }) => {
+            console.warn(blockFace, JSON.stringify(faceLocation));
+        }
+    });
 });

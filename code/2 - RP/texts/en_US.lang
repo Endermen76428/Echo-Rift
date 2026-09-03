@@ -107,6 +107,26 @@ entity.warn.echo_rift:spacetime_rift.unstable.item_complete=> §aComplete§r
 item.bedrock_awakening:echo_rift=§kEcho Rift
 item.echo_rift:guidebook=Guide Book\n§9Echo Rift
 
+#### Blocks
+### Forgotten Kingdom
+
+## Decoration
+
+item.echo_rift:black_marble_slab=Black Marble Slab\n§9Echo Rift
+item.echo_rift:black_marble_slab_unbreak=Black Marble Slab
+item.echo_rift:black_marble_slab_vertical=Black Marble Slab Vertical\n§9Echo Rift
+item.echo_rift:black_marble_slab_vertical_unbreak=Black Marble Slab Vertical
+
+item.echo_rift:marble_slab=Marble Slab\n§9Echo Rift
+item.echo_rift:marble_slab_unbreak=Marble Slab
+item.echo_rift:marble_slab_vertical=Marble Slab Vertical\n§9Echo Rift
+item.echo_rift:marble_slab_vertical_unbreak=Marble Slab Vertical
+
+item.echo_rift:red_marble_slab=Red Marble Slab\n§9Echo Rift
+item.echo_rift:red_marble_slab_unbreak=Red Marble Slab
+item.echo_rift:red_marble_slab_vertical=Red Marble Slab Vertical\n§9Echo Rift
+item.echo_rift:red_marble_slab_vertical_unbreak=Red Marble Slab Vertical
+
 ### Armor
 
 item.echo_rift:miner_helmet=Miner Helmet\n§9Echo Rift

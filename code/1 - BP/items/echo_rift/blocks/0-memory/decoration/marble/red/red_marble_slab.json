@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "echo_rift:red_marble_slab_unbreak",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "echo_rift:slab": {},
+      "minecraft:block_placer": {
+        "block": "echo_rift:red_marble_slab_unbreak",
+        "replace_block_item": true
+      }
+    }
+  }
+}
