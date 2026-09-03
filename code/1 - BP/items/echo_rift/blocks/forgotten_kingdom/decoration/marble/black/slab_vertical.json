@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "echo_rift:black_marble_slab_vertical",
+      "menu_category": { "category": "construction" }
+    },
+    "components": {
+      "echo_rift:slab_vertical": {},
+      "minecraft:block_placer": {
+        "block": "echo_rift:black_marble_slab_vertical",
+        "replace_block_item": true
+      }
+    }
+  }
+}

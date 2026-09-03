@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "minecraft:match_tool_filter_all": [ "minecraft:is_pickaxe" ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "echo_rift:marble_slab_vertical",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

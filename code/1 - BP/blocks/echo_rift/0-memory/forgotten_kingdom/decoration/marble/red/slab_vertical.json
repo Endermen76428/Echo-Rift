@@ -4,7 +4,8 @@
     "description": {
       "identifier": "echo_rift:red_marble_slab_vertical_unbreak",
       "menu_category": { "category": "construction" },
-      "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } }
+      "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } },
+      "states": { "bacs:double_slab": [false, true] }
     },
     "components": {
       "minecraft:tags": [ "bedrock_awakening:slab_vertical" ],
@@ -17,11 +18,24 @@
       "minecraft:movable": { "movement_type": "immovable" },
       "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
       "minecraft:destructible_by_mining": false,
-      "minecraft:destructible_by_explosion": false,
-      "minecraft:selection_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] },
-      "minecraft:collision_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] }
+      "minecraft:destructible_by_explosion": false
     },
     "permutations": [
+      {
+        "condition": "q.block_state('bacs:double_slab') == true",
+        "components": {
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:light_dampening": 15
+        }
+      },
+      {
+        "condition": "q.block_state('bacs:double_slab') == false",
+        "components": {
+          "minecraft:selection_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] },
+          "minecraft:collision_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] }
+        }
+      },
+
       {
         "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
         "components": { "minecraft:transformation": { "rotation": [0, 180, 0] } }

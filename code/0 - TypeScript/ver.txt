@@ -15,8 +15,8 @@ Blocks:
       - Fortune I: 1 - 5 Fragments;
       - Fortune II: 1 - 7 Fragments;
       - Fortune III: 1 - 9 Fragments.
-    - Marble Slabs can now be stacked;
-    - Vertical Marble Slabs can now be stacked;
+    - Marble Slabs can now be stacked.
+    - Vertical Marble Slabs can now be stacked.
 Items:
   > Guide Book:
     - When it's your first time using the addon you will receive a Guide Book.
@@ -34,7 +34,7 @@ Blocks:
       - Slabs;
       - Vertical Slabs;
       - Stairs.
-    - Red Marble Slabs no longer disappear when placed one on top of the other;
+    - Red Marble Slabs no longer disappear when placed one on top of the other.
 
 
 

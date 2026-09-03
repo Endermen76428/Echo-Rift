@@ -4,7 +4,8 @@
     "description": {
       "identifier": "echo_rift:red_marble_slab_vertical",
       "menu_category": { "category": "construction" },
-      "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } }
+      "traits": { "minecraft:placement_direction": { "enabled_states": ["minecraft:cardinal_direction"] } },
+      "states": { "bacs:double_slab": [false, true] }
     },
     "components": {
       "minecraft:tags": [ "bedrock_awakening:slab_vertical", "minecraft:is_pickaxe_item_destructible" ],
@@ -16,11 +17,25 @@
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:red_marble" } },
       "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
       "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
-      "minecraft:destructible_by_explosion": { "explosion_resistance": 7 },
-      "minecraft:selection_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] },
-      "minecraft:collision_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] }
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 7 }
     },
     "permutations": [
+      {
+        "condition": "q.block_state('bacs:double_slab') == true",
+        "components": {
+          "minecraft:geometry": "minecraft:geometry.full_block",
+          "minecraft:light_dampening": 15,
+          "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/decoration/marble/red/double_slab_vertical.json"
+        }
+      },
+      {
+        "condition": "q.block_state('bacs:double_slab') == false",
+        "components": {
+          "minecraft:selection_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] },
+          "minecraft:collision_box": { "origin": [ -8, 0, 0 ], "size": [ 16, 16, 8 ] }
+        }
+      },
+
       {
         "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
         "components": { "minecraft:transformation": { "rotation": [0, 180, 0] } }

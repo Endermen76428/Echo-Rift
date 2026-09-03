@@ -1,7 +1,8 @@
 import { holdMomeryFragment } from "../functions/holdItem/memoryFragment"
 import { EntityComponentTypes, Player, system } from "@minecraft/server"
-import { openDoor } from "../functions/memory/open_door"
+import { placeSlabVertical } from "../functions/build/slabsVertical"
 import { guidebook } from "../functions/guidebook/guidebook"
+import { openDoor } from "../functions/memory/open_door"
 import { placeSlab } from "../functions/build/slabs"
 
 system.beforeEvents.startup.subscribe(({blockComponentRegistry: customB, itemComponentRegistry: customI, dimensionRegistry: customD}) => {
@@ -41,6 +42,12 @@ system.beforeEvents.startup.subscribe(({blockComponentRegistry: customB, itemCom
     onUseOn: ({source, itemStack, block, blockFace, faceLocation}) => {
       if(!(source instanceof Player)) return
       placeSlab(source, itemStack, block, blockFace, faceLocation)
+    }
+  })
+  customI.registerCustomComponent("echo_rift:slab_vertical", {
+    onUseOn: ({source, itemStack, block, blockFace, faceLocation}) => {
+      if(!(source instanceof Player)) return
+      placeSlabVertical(source, itemStack, block, blockFace, faceLocation)
     }
   })
 })
