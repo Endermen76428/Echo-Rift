@@ -13,9 +13,9 @@ export function placeSlab(player, item, block, blockFace, faceLocation) {
             const verticalHalf = blockShift.permutation.getState("minecraft:vertical_half");
             if (verticalHalf == undefined)
                 return;
-            if ((verticalHalf == "top" && blockFace == Direction.Down))
+            if (verticalHalf == "top" && blockFace == Direction.Down)
                 return;
-            if ((verticalHalf == "bottom" && blockFace == Direction.Up))
+            if (verticalHalf == "bottom" && blockFace == Direction.Up)
                 return;
             if (!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId))
                 return;
@@ -25,9 +25,9 @@ export function placeSlab(player, item, block, blockFace, faceLocation) {
         const verticalHalf = block.permutation.getState("minecraft:vertical_half");
         if (verticalHalf == undefined)
             return;
-        if ((verticalHalf == "top" && blockFace == Direction.Up))
+        if (verticalHalf == "top" && blockFace == Direction.Up)
             return;
-        if ((verticalHalf == "bottom" && blockFace == Direction.Down))
+        if (verticalHalf == "bottom" && blockFace == Direction.Down)
             return;
         if (block.typeId != item.typeId)
             return;

@@ -13,8 +13,8 @@ export function placeSlab(player: Player, item: ItemStack, block: Block, blockFa
 
       const verticalHalf = blockShift.permutation.getState("minecraft:vertical_half")
       if(verticalHalf == undefined) return
-      if((verticalHalf == "top" && blockFace == Direction.Down)) return
-      if((verticalHalf == "bottom" && blockFace == Direction.Up)) return
+      if(verticalHalf == "top" && blockFace == Direction.Down) return
+      if(verticalHalf == "bottom" && blockFace == Direction.Up) return
 
       if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
       blockShift.setPermutation(blockShift.permutation.withState("bacs:double_slab", true))
@@ -23,8 +23,8 @@ export function placeSlab(player: Player, item: ItemStack, block: Block, blockFa
 
     const verticalHalf = block.permutation.getState("minecraft:vertical_half")
     if(verticalHalf == undefined) return
-    if((verticalHalf == "top" && blockFace == Direction.Up)) return
-    if((verticalHalf == "bottom" && blockFace == Direction.Down)) return
+    if(verticalHalf == "top" && blockFace == Direction.Up) return
+    if(verticalHalf == "bottom" && blockFace == Direction.Down) return
     if(block.typeId != item.typeId) return
 
     block.setPermutation(block.permutation.withState("bacs:double_slab", true))
