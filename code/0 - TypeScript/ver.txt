@@ -22,6 +22,14 @@ Blocks:
       - Fortune III: 1 - 9 Fragments.
     - Marble Slabs can now be stacked.
     - Vertical Marble Slabs can now be stacked.
+    - The following ores have been added to the marble version:
+      - Coal;
+      - Copper;
+      - Diamond;
+      - Gold;
+      - Iron;
+      - Lapis;
+      - Redstone.
 Items:
   > Guide Book:
     - When it's your first time using the addon you will receive a Guide Book.
