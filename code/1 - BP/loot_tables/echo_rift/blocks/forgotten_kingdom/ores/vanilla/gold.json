@@ -5,7 +5,13 @@
       "conditions": [
         {
           "condition": "match_tool",
-          "minecraft:match_tool_filter_all": [ "minecraft:is_pickaxe" ]
+          "minecraft:match_tool_filter_all": [ "minecraft:is_pickaxe" ],
+          "minecraft:match_tool_filter_none": [
+            "minecraft:wooden_tier",
+            "minecraft:stone_tier",
+            "minecraft:copper_tier",
+            "minecraft:golden_tier"
+          ]
         }
       ],
       "entries": [

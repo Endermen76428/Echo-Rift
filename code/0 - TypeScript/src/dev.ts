@@ -8,7 +8,7 @@ import { apiWarn } from "./lib/player/warn"
 const center = {x: 18.5, y: 0, z: 0.5}
 
 world.afterEvents.itemUse.subscribe(({itemStack, source: player}) => {
-  console.warn(itemStack.getTags())
+  // console.warn(itemStack.getTags())
   if(player.hasTag("dev")){
     if(itemStack.typeId == "minecraft:stick"){
       // apiWarn.notify(player, "errb:", {type: "title"})
