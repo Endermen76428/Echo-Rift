@@ -5,19 +5,13 @@
       "conditions": [
         {
           "condition": "match_tool",
-          "minecraft:match_tool_filter_all": [ "minecraft:is_pickaxe" ],
-          "minecraft:match_tool_filter_none": [
-            "minecraft:wooden_tier",
-            "minecraft:stone_tier",
-            "minecraft:copper_tier",
-            "minecraft:golden_tier"
-          ]
+          "minecraft:match_tool_filter_all": [ "minecraft:is_pickaxe" ]
         }
       ],
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:diamond",
+          "name": "minecraft:raw_iron",
           "pools": [
             {
               "rolls": 1,
@@ -36,7 +30,7 @@
               "entries": [
                 {
                   "type": "item",
-                  "name": "minecraft:diamond",
+                  "name": "minecraft:raw_iron",
                   "weight": 25
                 },
                 { "type": "empty", "weight": 75 }
@@ -59,7 +53,7 @@
               "entries": [
                 {
                   "type": "item",
-                  "name": "minecraft:diamond",
+                  "name": "minecraft:raw_iron",
                   "weight": 50,
                   "functions": [
                     {
@@ -88,7 +82,7 @@
               "entries": [
                 {
                   "type": "item",
-                  "name": "minecraft:diamond",
+                  "name": "minecraft:raw_iron",
                   "weight": 75,
                   "functions": [
                     {

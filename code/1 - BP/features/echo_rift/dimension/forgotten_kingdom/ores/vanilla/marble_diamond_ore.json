@@ -7,6 +7,14 @@
       {
         "places_block": "echo_rift:marble_diamond_ore",
         "may_replace": [ "echo_rift:marble" ]
+      },
+      {
+        "places_block": "echo_rift:red_marble_diamond_ore",
+        "may_replace": [ "echo_rift:red_marble" ]
+      },
+      {
+        "places_block": "echo_rift:black_marble_diamond_ore",
+        "may_replace": [ "echo_rift:black_marble" ]
       }
     ]
   }

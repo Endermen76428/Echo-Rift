@@ -3,7 +3,7 @@
   "minecraft:feature_rules": {
     "description": {
       "identifier": "echo_rift:marble_diamond_ore_feature",
-      "places_feature": "echo_rift:echo_rift/dimension/forgotten_kingdom/all_marble_diamond_ore_feature"
+      "places_feature": "echo_rift:echo_rift/dimension/forgotten_kingdom/marble_diamond_ore_feature"
     },
     "conditions": {
       "placement_pass": "underground_pass",
