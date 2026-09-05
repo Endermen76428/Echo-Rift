@@ -5,6 +5,7 @@ se o player sair do mapa e o outro continuar jogando iniciando outra raid na dim
 arrumar todas as loot_tables dos blocos de marmore, pois é possivel pergar ele usando as mão
 adicionar o componente de conexão das cercas nas lajes e escadas
 no sistema das lajes daria pra verificar se o player está dentro do bloco para não executar, pra ficar ainda mais parecido com a vanilla
+se tiver uma escada no Top e um protal_frame tambem do lado oeste o frame some (na real ta acontecendo no bottom tambem, e parece não ter um padrão)
 
 Echo Rift v0.1.1 Alpha
 > Features:
@@ -27,7 +28,7 @@ Items:
     - Memory Fragments Forgotten Kingdom were renamed to "Memory of Forgotten Kingdom", to avoid confusion with the new items.
     - Change the Memory item texture.
     - Added the Memory Fragment of Forgotten Kingdom item as an previous veriosn of the Memory of Forgotten Kingdom item.
-    - Using nine of any memory fragment you can create a Complete Memory.
+    - Using nine memory fragments you can create a Complete Memory.
 
 > Bug Fix:
 Blocks:
