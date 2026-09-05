@@ -16,7 +16,15 @@
       },
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble" } },
       "minecraft:liquid_detection": { "detection_rules": [ {"can_contain_liquid": true} ] },
-      "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.5,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "q.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 0.75
+          }
+        ]
+      },
       "minecraft:destructible_by_explosion": { "explosion_resistance": 7 }
     },
     "permutations": [

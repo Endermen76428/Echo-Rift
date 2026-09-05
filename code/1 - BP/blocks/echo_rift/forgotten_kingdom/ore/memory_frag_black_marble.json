@@ -11,7 +11,15 @@
       "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:memory_frag_black_marble" } },
       "minecraft:loot": "loot_tables/echo_rift/blocks/ores/fragments/forgotten_kingdom.json",
       "minecraft:light_dampening": 15,
-      "minecraft:destructible_by_mining": { "seconds_to_destroy": 2 },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 2.5,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "q.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 0.75
+          }
+        ]
+      },
       "minecraft:destructible_by_explosion": { "explosion_resistance": 7 }
     }
   }

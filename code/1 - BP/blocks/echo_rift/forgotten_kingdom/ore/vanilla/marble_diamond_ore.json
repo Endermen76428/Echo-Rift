@@ -1,0 +1,30 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "echo_rift:marble_diamond_ore",
+      "menu_category": { "category": "nature", "group": "minecraft:itemGroup.name.ore" }
+    },
+    "components": {
+      "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible", "minecraft:iron_tier_destructible" ],
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble_diamond_ore" } },
+      "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/ores/vanilla/diamond.json",
+      "minecraft:light_dampening": 15,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 10,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')" },
+            "destroy_speed": 3
+          },
+          {
+            "item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier') || q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')" },
+            "destroy_speed": 2.75
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": { "explosion_resistance": 7 }
+    }
+  }
+}

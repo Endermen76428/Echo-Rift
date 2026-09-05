@@ -1,0 +1,9 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": { "identifier": "echo_rift:echo_rift/dimension/forgotten_kingdom/all_marble_diamond_ore_feature" },
+    "features": [
+      "echo_rift:echo_rift/dimension/forgotten_kingdom/marble_diamond_ore_feature"
+    ]
+  }
+}

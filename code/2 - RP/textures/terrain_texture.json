@@ -16,8 +16,12 @@
     "echo_rift:marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/decoration/marble" },
     "echo_rift:red_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/decoration/red_marble" },
 
+    "echo_rift:memory_frag_black_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_black_marble" },
     "echo_rift:memory_frag_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_marble" },
     "echo_rift:memory_frag_red_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_red_marble" },
-    "echo_rift:memory_frag_black_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_black_marble" }
+
+    "echo_rift:black_marble_diamond_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_diamond_ore" },
+    "echo_rift:marble_diamond_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_diamond_ore" },
+    "echo_rift:red_marble_diamond_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_diamond_ore" }
   }
 }

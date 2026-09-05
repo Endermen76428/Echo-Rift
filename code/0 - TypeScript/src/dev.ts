@@ -8,6 +8,7 @@ import { apiWarn } from "./lib/player/warn"
 const center = {x: 18.5, y: 0, z: 0.5}
 
 world.afterEvents.itemUse.subscribe(({itemStack, source: player}) => {
+  console.warn(itemStack.getTags())
   if(player.hasTag("dev")){
     if(itemStack.typeId == "minecraft:stick"){
       // apiWarn.notify(player, "errb:", {type: "title"})
@@ -46,4 +47,13 @@ world.afterEvents.itemUse.subscribe(({itemStack, source: player}) => {
       })
     }
   }
+})
+
+let timer = 0
+world.afterEvents.entityHitBlock.subscribe(({hitBlock}) => {
+  timer = Date.now()
+})
+
+world.afterEvents.playerBreakBlock.subscribe((ev) => {
+  console.warn(Date.now() - timer)
 })
