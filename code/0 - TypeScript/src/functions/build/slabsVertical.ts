@@ -1,50 +1,36 @@
-import { Block, Direction, EquipmentSlot, ItemStack, Player, Vector3 } from "@minecraft/server"
+import { Direction, EquipmentSlot, PlayerInteractWithBlockBeforeEvent as InteractEvent, system } from "@minecraft/server"
 import { apiEquippable } from "../../lib/player/equippable"
 import { BlocksOffsetDirection } from "../../lib/variables"
 
-export function placeSlabVertical(player: Player, item: ItemStack, block: Block, blockFace: Direction, faceLocation: Vector3): void {
-  const offset = BlocksOffsetDirection[blockFace]
+export function placeSlabVertical(event: InteractEvent): void {
+  const { player, itemStack: item, block, blockFace, faceLocation } = event
+  if(item == undefined) return
 
-  const blockShift = block.offset(offset)
-  if(!blockShift || !blockShift.isValid) return
-
-  if(block.typeId == item.typeId && block.permutation.getState("bacs:double_slab") == false){
+  if(block.typeId == item.typeId && block.permutation.getState("bacs:double_slab") != true){
     const cardinalDirection = block.permutation.getState("minecraft:cardinal_direction")
     if(cardinalDirection == undefined) return
 
     const directionTest = slabsOpossiteDirectionTest[cardinalDirection]
-    if(directionTest != blockFace) return
-
-    block.setPermutation(block.permutation.withState("bacs:double_slab", true))
-    if(blockShift.typeId != item.typeId){
-      apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)
-    } else {
-      blockShift.setType("minecraft:air")
+    if(directionTest == blockFace){
+      event.cancel = true
+      system.run(() => {
+        if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
+        block.setPermutation(block.permutation.withState("bacs:double_slab", true))
+      })
+      return
     }
-    return
   }
 
-  const cardinalDirection = blockShift.permutation.getState("minecraft:cardinal_direction")
-  if(cardinalDirection == undefined) return
-
-  const directionTest = slabsDirectionTest[cardinalDirection]
-  console.warn(cardinalDirection, blockFace, JSON.stringify(faceLocation))
-  if(directionTest != blockFace){
-    if(blockFace == Direction.Down || blockFace == Direction.Up){
-      if(cardinalDirection == "north" && faceLocation.z < 0.5) return
-      if(cardinalDirection == "south" && faceLocation.z > 0.5) return
-      if(cardinalDirection == "west" && faceLocation.x < 0.5) return
-      if(cardinalDirection == "east" && faceLocation.x > 0.5) return
-      console.warn("Teste baixo cima")
-      if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
-      blockShift.setPermutation(blockShift.permutation.withState("bacs:double_slab", true))
-    }
-    return
-  }
+  const offset = BlocksOffsetDirection[blockFace]
+  const blockShift = block.offset(offset)
+  if(!blockShift || !blockShift.isValid) return
+  if(blockShift.typeId != item.typeId || blockShift.permutation.getState("bacs:double_slab") == true) return
 
   // Se ele não conseguir decrementar o item, não faz nada
-  if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
-  blockShift.setPermutation(blockShift.permutation.withState("bacs:double_slab", true))
+  system.run(() => {
+    if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
+    blockShift.setPermutation(blockShift.permutation.withState("bacs:double_slab", true))
+  })
 }
 
 const slabsOpossiteDirectionTest: { [key: string]: Direction } = {

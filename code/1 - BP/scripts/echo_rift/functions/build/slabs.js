@@ -10,14 +10,15 @@ export function placeSlab(event) {
         if (verticalHalf == undefined)
             return;
         const directionTest = slabsDirectionTest[verticalHalf];
-        if (directionTest != blockFace)
+        if (directionTest == blockFace) {
+            event.cancel = true;
+            if (!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId))
+                return;
+            system.run(() => {
+                block.setPermutation(block.permutation.withState("bacs:double_slab", true));
+            });
             return;
-        event.cancel = true;
-        if (!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId))
-            return;
-        system.run(() => {
-            block.setPermutation(block.permutation.withState("bacs:double_slab", true));
-        });
+        }
     }
     const offset = BlocksOffsetDirection[blockFace];
     const blockShift = block.offset(offset);

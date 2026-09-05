@@ -1,4 +1,4 @@
-import { Block, Direction, EquipmentSlot, ItemStack, Player, PlayerInteractWithBlockBeforeEvent as InteractEvent, Vector3, world, system } from "@minecraft/server"
+import { Direction, EquipmentSlot, PlayerInteractWithBlockBeforeEvent as InteractEvent, system } from "@minecraft/server"
 import { BlocksOffsetDirection } from "../../lib/variables"
 import { apiEquippable } from "../../lib/player/equippable"
 
@@ -11,13 +11,14 @@ export function placeSlab(event: InteractEvent): void {
     if(verticalHalf == undefined) return
 
     const directionTest = slabsDirectionTest[verticalHalf]
-    if(directionTest != blockFace) return
-
-    event.cancel = true
-    if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
-    system.run(() => {
-      block.setPermutation(block.permutation.withState("bacs:double_slab", true))
-    })
+    if(directionTest == blockFace){
+      event.cancel = true
+      if(!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId)) return
+      system.run(() => {
+        block.setPermutation(block.permutation.withState("bacs:double_slab", true))
+      })
+      return
+    }
   }
 
   const offset = BlocksOffsetDirection[blockFace]
