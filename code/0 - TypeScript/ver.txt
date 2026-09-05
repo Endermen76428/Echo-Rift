@@ -5,7 +5,7 @@ se o player sair do mapa e o outro continuar jogando iniciando outra raid na dim
 arrumar todas as loot_tables dos blocos de marmore, pois é possivel pergar ele usando as mão
 adicionar o componente de conexão das cercas nas lajes e escadas
 no sistema das lajes daria pra verificar se o player está dentro do bloco para não executar, pra ficar ainda mais parecido com a vanilla
-se tiver uma escada no Top e um protal_frame tambem do lado oeste o frame some (na real ta acontecendo no bottom tambem, e parece não ter um padrão)
+se tiver uma escada no Top e um protal_frame tambem do lado oeste o frame some (na real ta acontecendo no bottom tambem e até mesmo com lajes, e parece não ter um padrão)
 
 Echo Rift v0.1.1 Alpha
 > Features:
