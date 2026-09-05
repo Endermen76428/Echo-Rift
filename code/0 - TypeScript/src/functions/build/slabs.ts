@@ -29,7 +29,6 @@ export function placeSlab(event: InteractEvent): void {
   const verticalHalf = blockShift.permutation.getState("minecraft:vertical_half")
   if(verticalHalf == undefined) return
 
-  console.warn(verticalHalf, faceLocation.y)
   if((verticalHalf == "bottom" && (faceLocation.y < 0.5 && faceLocation.y != 0)) || (verticalHalf == "top" && faceLocation.y > 0.5)) return
 
   // Se ele não conseguir decrementar o item, não faz nada

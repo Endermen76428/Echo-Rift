@@ -29,12 +29,10 @@ system.beforeEvents.startup.subscribe(({ blockComponentRegistry: customB, itemCo
             }
         }
     });
-    customI.registerCustomComponent("echo_rift:slab", {
-        onUseOn: ({ source, itemStack, block, blockFace, faceLocation }) => {
-        }
+    customI.registerCustomComponent("bedrock_awakening:slab", {
+        onUseOn: () => { }
     });
-    customI.registerCustomComponent("echo_rift:slab_vertical", {
-        onUseOn: ({ source, itemStack, block, blockFace, faceLocation }) => {
-        }
+    customI.registerCustomComponent("bedrock_awakening:slab_vertical", {
+        onUseOn: () => { }
     });
 });

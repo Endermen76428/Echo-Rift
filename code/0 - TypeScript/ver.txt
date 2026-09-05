@@ -4,6 +4,7 @@ fazer um sistema que da gera as escadarias do miniboss sempre em direção ao le
 se o player sair do mapa e o outro continuar jogando iniciando outra raid na dimensão o backup do player que não voltou a jogar acaba sumindo
 arrumar todas as loot_tables dos blocos de marmore, pois é possivel pergar ele usando as mão
 adicionar o componente de conexão das cercas nas lajes e escadas
+no sistema das lajes daria pra verificar se o player está dentro do bloco para não executar, pra ficar ainda mais parecido com a vanilla
 
 Echo Rift v0.1.1 Alpha
 > Features:

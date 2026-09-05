@@ -6,7 +6,7 @@
       "menu_category": { "category": "construction" }
     },
     "components": {
-      "echo_rift:slab_vertical": {},
+      "bedrock_awakening:slab_vertical": {},
       "minecraft:tags": { "tags": [ "bedrock_awakening:slab_vertical" ] },
       "minecraft:block_placer": {
         "block": "echo_rift:black_marble_slab_vertical_unbreak",

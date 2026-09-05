@@ -38,16 +38,10 @@ system.beforeEvents.startup.subscribe(({blockComponentRegistry: customB, itemCom
       }
     }
   })
-  customI.registerCustomComponent("echo_rift:slab", {
-    onUseOn: ({source, itemStack, block, blockFace, faceLocation}) => {
-      // if(!(source instanceof Player)) return
-      // placeSlab(source, itemStack, block, blockFace, faceLocation)
-    }
+  customI.registerCustomComponent("bedrock_awakening:slab", {
+    onUseOn: () => {}
   })
-  customI.registerCustomComponent("echo_rift:slab_vertical", {
-    onUseOn: ({source, itemStack, block, blockFace, faceLocation}) => {
-      // if(!(source instanceof Player)) return
-      // placeSlabVertical(source, itemStack, block, blockFace, faceLocation)
-    }
+  customI.registerCustomComponent("bedrock_awakening:slab_vertical", {
+    onUseOn: () => {}
   })
 })
