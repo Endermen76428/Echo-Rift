@@ -6,6 +6,7 @@ arrumar todas as loot_tables dos blocos de marmore, pois é possivel pergar ele 
 adicionar o componente de conexão das cercas nas lajes e escadas
 no sistema das lajes daria pra verificar se o player está dentro do bloco para não executar, pra ficar ainda mais parecido com a vanilla
 se tiver uma escada no Top e um protal_frame tambem do lado oeste o frame some (na real ta acontecendo no bottom tambem e até mesmo com lajes, e parece não ter um padrão)
+tem que alterar o iterations dos minerios pra corresponder a quantia de tentativas do vanilla, alem de adicionar as variações uniforme e por camadas
 
 Echo Rift v0.1.1 Alpha
 > Features:

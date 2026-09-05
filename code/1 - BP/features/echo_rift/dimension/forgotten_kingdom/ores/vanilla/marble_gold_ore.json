@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": { "identifier": "echo_rift:echo_rift/dimension/forgotten_kingdom/marble_gold_ore_feature" },
+    "count": 13,
+    "replace_rules": [
+      {
+        "places_block": "echo_rift:marble_gold_ore",
+        "may_replace": [ "echo_rift:marble" ]
+      },
+      {
+        "places_block": "echo_rift:red_marble_gold_ore",
+        "may_replace": [ "echo_rift:red_marble" ]
+      },
+      {
+        "places_block": "echo_rift:black_marble_gold_ore",
+        "may_replace": [ "echo_rift:black_marble" ]
+      }
+    ]
+  }
+}

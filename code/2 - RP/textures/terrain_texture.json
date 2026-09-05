@@ -21,13 +21,25 @@
     "echo_rift:memory_frag_red_marble": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/fragment_ore_red_marble" },
 
     "echo_rift:black_marble_coal_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_coal_ore" },
+    "echo_rift:black_marble_copper_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_copper_ore" },
     "echo_rift:black_marble_diamond_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_diamond_ore" },
+    "echo_rift:black_marble_gold_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_gold_ore" },
     "echo_rift:black_marble_iron_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_iron_ore" },
+    "echo_rift:black_marble_lapis_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_lapis_ore" },
+    "echo_rift:black_marble_redstone_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/black_marble_redstone_ore" },
     "echo_rift:marble_coal_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_coal_ore" },
+    "echo_rift:marble_copper_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_copper_ore" },
     "echo_rift:marble_diamond_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_diamond_ore" },
+    "echo_rift:marble_gold_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_gold_ore" },
     "echo_rift:marble_iron_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_iron_ore" },
+    "echo_rift:marble_lapis_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_lapis_ore" },
+    "echo_rift:marble_redstone_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/marble_redstone_ore" },
     "echo_rift:red_marble_coal_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_coal_ore" },
+    "echo_rift:red_marble_copper_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_copper_ore" },
     "echo_rift:red_marble_diamond_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_diamond_ore" },
-    "echo_rift:red_marble_iron_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_iron_ore" }
+    "echo_rift:red_marble_gold_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_gold_ore" },
+    "echo_rift:red_marble_iron_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_iron_ore" },
+    "echo_rift:red_marble_lapis_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_lapis_ore" },
+    "echo_rift:red_marble_redstone_ore": { "textures": "textures/echo_rift/blocks/dimension/forgotten_kingdom/ore/vanilla/red_marble_redstone_ore" }
   }
 }

@@ -2,20 +2,20 @@
   "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
-      "identifier": "echo_rift:black_marble_diamond_ore",
+      "identifier": "echo_rift:black_marble_lapis_ore",
       "menu_category": { "category": "nature", "group": "minecraft:itemGroup.name.ore" }
     },
     "components": {
       "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible" ],
       "minecraft:geometry": "minecraft:geometry.full_block",
-      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:black_marble_diamond_ore" } },
-      "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/ores/vanilla/diamond.json",
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:black_marble_lapis_ore" } },
+      "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/ores/vanilla/lapis.json",
       "minecraft:light_dampening": 15,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 10,
         "item_specific_speeds": [
           {
-            "item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')" },
+            "item": { "tags": "q.any_tag('minecraft:is_pickaxe') && !q.any_tag('minecraft:wooden_tier', 'minecraft:golden_tier', 'minecraft:diamond_tier', 'minecraft:netherite_tier')" },
             "destroy_speed": 3
           },
           {

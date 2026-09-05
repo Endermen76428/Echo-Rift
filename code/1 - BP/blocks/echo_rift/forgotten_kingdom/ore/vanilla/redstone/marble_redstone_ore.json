@@ -2,14 +2,14 @@
   "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
-      "identifier": "echo_rift:black_marble_diamond_ore",
+      "identifier": "echo_rift:marble_redstone_ore",
       "menu_category": { "category": "nature", "group": "minecraft:itemGroup.name.ore" }
     },
     "components": {
       "minecraft:tags": [ "minecraft:is_pickaxe_item_destructible" ],
       "minecraft:geometry": "minecraft:geometry.full_block",
-      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:black_marble_diamond_ore" } },
-      "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/ores/vanilla/diamond.json",
+      "minecraft:material_instances": { "*": { "render_method": "opaque", "texture": "echo_rift:marble_redstone_ore" } },
+      "minecraft:loot": "loot_tables/echo_rift/blocks/forgotten_kingdom/ores/vanilla/redstone.json",
       "minecraft:light_dampening": 15,
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 10,
