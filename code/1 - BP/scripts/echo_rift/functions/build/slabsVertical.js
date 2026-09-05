@@ -2,7 +2,11 @@ import { Direction, EquipmentSlot } from "@minecraft/server";
 import { apiEquippable } from "../../lib/player/equippable";
 import { BlocksOffsetDirection } from "../../lib/variables";
 export function placeSlabVertical(player, item, block, blockFace, faceLocation) {
-    if (block.typeId == item.typeId) {
+    const offset = BlocksOffsetDirection[blockFace];
+    const blockShift = block.offset(offset);
+    if (!blockShift || !blockShift.isValid)
+        return;
+    if (block.typeId == item.typeId && block.permutation.getState("bacs:double_slab") == false) {
         const cardinalDirection = block.permutation.getState("minecraft:cardinal_direction");
         if (cardinalDirection == undefined)
             return;
@@ -10,22 +14,14 @@ export function placeSlabVertical(player, item, block, blockFace, faceLocation) 
         if (directionTest != blockFace)
             return;
         block.setPermutation(block.permutation.withState("bacs:double_slab", true));
-        const offset = BlocksOffsetDirection[blockFace];
-        const blockShift = block.offset(offset);
-        if (blockShift && blockShift.isValid) {
-            if (blockShift.typeId != item.typeId) {
-                apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId);
-            }
-            else {
-                blockShift.setType("minecraft:air");
-            }
+        if (blockShift.typeId != item.typeId) {
+            apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId);
+        }
+        else {
+            blockShift.setType("minecraft:air");
         }
         return;
     }
-    const offset = BlocksOffsetDirection[blockFace];
-    const blockShift = block.offset(offset);
-    if (!blockShift || !blockShift.isValid)
-        return;
     const cardinalDirection = blockShift.permutation.getState("minecraft:cardinal_direction");
     if (cardinalDirection == undefined)
         return;
@@ -42,7 +38,11 @@ export function placeSlabVertical(player, item, block, blockFace, faceLocation) 
             if (cardinalDirection == "east" && faceLocation.x > 0.5)
                 return;
             console.warn("Teste baixo cima");
+            if (!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId))
+                return;
+            blockShift.setPermutation(blockShift.permutation.withState("bacs:double_slab", true));
         }
+        return;
     }
     if (!apiEquippable.decrement(player, EquipmentSlot.Mainhand, item.typeId))
         return;

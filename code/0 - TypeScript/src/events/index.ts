@@ -1,3 +1,4 @@
+import "./playerInteractBlock"
 import "./inventoryChange"
 import "./interactEntity"
 import "./hotbarChange"
