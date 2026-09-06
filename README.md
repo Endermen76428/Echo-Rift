@@ -1,5 +1,7 @@
 ![teste](doc/1.0%20-%20Marble%20Cave.png)
 ![teste](doc/1.1%20-%20Mining%20Memory.gif)
+![teste](doc/1.2%20-%20Craft%20Memory.png)
+![teste](doc/1.3%20-%20Marble%20Decoration.gif)
 ![teste](doc/2.0%20-%20Forgotten%20Kingdom%20Portal.png)
 ![teste](doc/2.0%20-%20Opening%20Rift.gif)
 ![teste](doc/2.1%20-%20Sacrificing%20Items.gif)
