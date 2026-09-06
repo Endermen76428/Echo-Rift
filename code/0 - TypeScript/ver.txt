@@ -14,6 +14,7 @@ Blocks:
   > Marble:
     - Changed the breaking speed of all marble blocks to match vanilla blocks.
     - Added crafts to Slabs, Vertical Slabs and Stairs in all marble variations.
+    - Memory Fragment Ores now just can be broken with an iron-level pickaxe or higher.
     - Memory Fragment Ores had the loot table changed:
       - Now it drop Memory Fragments instead of the Complete Memory;
       - No Enchant: 1 - 3 Fragments;

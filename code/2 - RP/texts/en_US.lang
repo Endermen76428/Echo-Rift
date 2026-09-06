@@ -219,8 +219,32 @@ ui.bedrock_awakening:guidebook.return=Return
 
 ### Guidebook
 
+## Page Main
 ui.echo_rift:guidebook.title.main=Echo Rift
 ui.echo_rift:guidebook.body.main=§lEcho Rift§r is a Dungeon crawler-style addon.\nFind lost memories and open fissures to a distant past.\nOvercome its challenges to earn its rewards.\n\n
+
+## Page 0
+ui.echo_rift:guidebook.title.main.general=General Info
+ui.echo_rift:guidebook.body.main.general=The raids are memories of a distant past, each with its own challenges and rewards.\nHowever, all raids follow certain rules:\n\n§l>§r Each raid has a portal and a memory to open a rift in spacetime.\n§l>§r The rift cannot open completely, so it will be necessary to drop specific items on the rift to open it fully.\n§l>§r Inside the Raid, you must defeat the raid and escape within 15 minutes. Then, complete the room's challenge to unlock doors that can be opened, generating new areas of the dungeon.\n§l>§r Every 5 normal levels there will be a challenge room, serving as a transition to the new dungeon categories.\n\nFor more specific information about each raid, use the button below:
+
+## Page 1
+ui.echo_rift:guidebook.title.main.raids_list=Raids List
+
+## Page 1-0
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom=Forgotten Kingdom
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom=An underground kingdom created amidst marble stones, forgotten in the ruins of its own greed.\n\n
+
+## Page 1-0-0
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.marble_cave=Marble Caves
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.marble_cave=The Marble Cave is an underground biome where all stone blocks and ores are replaced by their respective Marble Block versions.\n\nMarble Caves can be found near the following biomes:\n- Plains;\n- Sunflower Plains;\n- Forest;\n- Flower Forest;\n- Birch Forest.\n\n
+
+## Page 1-0-1
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.memory=Memory
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.memory=§l>§r The Memory of the Forgotten Kingdom can be found as an ore in the Marble Caves biome between layers y0 and y128.\n§l>§r Memory Fragment Ore can be collected with an iron-level pickaxe or higher, dropping 1 to 3 memory fragments. The Fortune enchantment can be used to increase the amount obtained.\n§l>§r To obtain a Complete Memory, combine 9 fragments at a Crafting Table.\n\n
+
+## Page 1-0-2
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.rift=Rift
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.rift=§l>§r To open the fissure, you need to find a marble portal on the surface of the Marble Caverns biome.\n§l>§r Hold a Memory of Forgotten Kingdom in your hand near a portal and use the item to open the fissure.\n§l>§r Four types of items will be needed to fully open the portal, any of these items can be required:\n- Amethyst Shard: 4-21\n- Calcite: 1-21\n- Coal: 10-21\n- Copper Ingot: 3-18\n- Diamond: 1-10\n- Gold Block: 1-8\n- Gold Ingot: 5-16\n- Quartz: 10-21\n- Iron Ingot: 7-16\n- Iron Sword: 1-4\n- Marble: 1-21\n\n
 
 ### Rift Close
 

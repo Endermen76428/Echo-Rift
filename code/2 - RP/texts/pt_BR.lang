@@ -219,8 +219,32 @@ ui.bedrock_awakening:guidebook.return=Voltar
 
 ### Guidebook
 
+## Page Main
 ui.echo_rift:guidebook.title.main=Echo Rift
 ui.echo_rift:guidebook.body.main=§lEcho Rift§r é um addon no estilo Ataque de Dungeons.\nEncontre memórias perdidas e abra fissuras para um passado distante.\nSupere seus desafios para conseguir suas recompensas.\n\n
+
+## Page 0
+ui.echo_rift:guidebook.title.main.general=Informações Gerais
+ui.echo_rift:guidebook.body.main.general=As invasões são memórias de um passado distante, cada uma com seus desafios e recomepensas.\nPorem todas as invasões seguem alguns padrões:\n\n§l>§r Cada invasão possue um portal e uma memória para abrir uma fissura no espaço-tempo.\n§l>§r A fissura não consegue se abrir totalmente, então será necessario jogar alguns itens especificos na fissura para abri-la completamente.\n§l>§r Dentro da invasão você deve derrotar a invasão e sair antes de 15 minutos, então conclua o desafio da sala para liberar portas que podem ser abertas gerando novas áreas da dungeon.\n§l>§r A cada 5 niveis normais haverá uma sala de desafios, sendo uma transição para as novas categorias da dungeon.\n\nPara informações mais especificas sobre cada invasão, use o botão abaixo:
+
+## Page 1
+ui.echo_rift:guidebook.title.main.raids_list=Lista de Invasões
+
+## Page 1-0
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom=Reino Esquecido
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom=Um Reino subterrâneo criado em meio a pedras de mármore, esquecido em ruinas de sua própria ganância.\n\n
+
+## Page 1-0-0
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.marble_cave=Cavernas de Mármore
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.marble_cave=A Caverna de Mármore é um bioma subterrâneo possuindo todos os blocos de pedra e minérios substituidos por sua respectiva versão em Bloco de Mármore.\n\nAs Cavernas de Mármore podem ser encontrados perto dos biomas:\n- Planície;\n- Planície de Flores;\n- Floresta;\n- Floresta de Flores;\n- Floresta de Bétula.\n\n
+
+## Page 1-0-1
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.memory=Memória
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.memory=§l>§r A Memória do Reino Esquecido pode ser encontrado em forma de um minério no bioma de Carvernas de Mármore entre as camadas y0 à y128.\n§l>§r O Minério de Fragmento de Memória pode ser coletado com uma picareta de nível ferro ou superior, soltando de 1 a 3 fragmentos de memória, podendo ser utilizado o encantamento de fortuna para aumentar a quantia conseguida.\n§l>§r Para conseguir uma Memória Completa junte 9 fragmentos em uma Bancada de Trabalho.\n\n
+
+## Page 1-0-2
+ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.rift=Fissura
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.rift=§l>§r Para abrir a fissura é necessario encontrar um portal de mármore na superficie do bioma de Carvernas de Mármore.\n§l>§r Segure uma Memória Completa do Reino Esquecido na mão perto de um portal e use o item para abrir a fissura.\n§l>§r Será necessario 4 tipos de itens para abrir o portal completamente, podendo ser qualquer um desses itens:\n- Fragmento de Ametista: 4-21\n- Calcita: 1-21\n- Carvão: 10-21\n- Barra de Cobre: 3-18\n- Diamente: 1-10\n- Bloco de Ouro: 1-8\n- Barra de Ouro: 5-16\n- Quartzo: 10-21\n- Barra de Ferro: 7-16\n- Espada de Ferro: 1-4\n- Mármore: 1-21\n\n
 
 ### Rift Close
 
