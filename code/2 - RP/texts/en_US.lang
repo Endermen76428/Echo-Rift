@@ -48,6 +48,28 @@ tile.echo_rift:memory_frag_marble.name=Marble with Memory Fragment\n§9Echo Rift
 tile.echo_rift:memory_frag_red_marble.name=Red Marble with Memory Fragment\n§9Echo Rift
 tile.echo_rift:memory_frag_black_marble.name=Black Marble with Memory Fragment\n§9Echo Rift
 
+tile.echo_rift:marble_coal_ore.name=Marble Coal Ore\n§9Echo Rift
+tile.echo_rift:marble_copper_ore.name=Marble Copper Ore\n§9Echo Rift
+tile.echo_rift:marble_lapis_ore.name=Marble Lapis Lazuli Ore\n§9Echo Rift
+tile.echo_rift:marble_iron_ore.name=Marble Iron Ore\n§9Echo Rift
+tile.echo_rift:marble_gold_ore.name=Marble Gold Ore\n§9Echo Rift
+tile.echo_rift:marble_redstone_ore.name=Marble Redstone Ore\n§9Echo Rift
+tile.echo_rift:marble_diamond_ore.name=Marble Diamond Ore\n§9Echo Rift
+tile.echo_rift:red_marble_coal_ore.name=Red Marble Coal Ore\n§9Echo Rift
+tile.echo_rift:red_marble_copper_ore.name=Red Marble Copper Ore\n§9Echo Rift
+tile.echo_rift:red_marble_lapis_ore.name=Red Marble Lapis Lazuli Ore\n§9Echo Rift
+tile.echo_rift:red_marble_iron_ore.name=Red Marble Iron Ore\n§9Echo Rift
+tile.echo_rift:red_marble_gold_ore.name=Red Marble Gold Ore\n§9Echo Rift
+tile.echo_rift:red_marble_redstone_ore.name=Red Marble Redstone Ore\n§9Echo Rift
+tile.echo_rift:red_marble_diamond_ore.name=Red Marble Diamond Ore\n§9Echo Rift
+tile.echo_rift:black_marble_coal_ore.name=Black Marble Coal Ore\n§9Echo Rift
+tile.echo_rift:black_marble_copper_ore.name=Black Marble Copper Ore\n§9Echo Rift
+tile.echo_rift:black_marble_lapis_ore.name=Black Marble Lapis Lazuli Ore\n§9Echo Rift
+tile.echo_rift:black_marble_iron_ore.name=Black Marble Iron Ore\n§9Echo Rift
+tile.echo_rift:black_marble_gold_ore.name=Black Marble Gold Ore\n§9Echo Rift
+tile.echo_rift:black_marble_redstone_ore.name=Black Marble Redstone Ore\n§9Echo Rift
+tile.echo_rift:black_marble_diamond_ore.name=Black Marble Diamond Ore\n§9Echo Rift
+
 ### Sacrifice Items
 
 tile.echo_rift:marble.translate=Marble Block
@@ -165,6 +187,10 @@ echo_rift:itemGroup.name.unbreak_blocks=Unbreak Blocks
 ## Items
 
 echo_rift:itemGroup.name.memories=Memories
+
+## Nature
+
+echo_rift:itemGroup.name.marble_cave_ores=Marble Cave Ores
 
 
 

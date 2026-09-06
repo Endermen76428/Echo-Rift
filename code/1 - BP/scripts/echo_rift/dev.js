@@ -41,9 +41,3 @@ world.afterEvents.itemUse.subscribe(({ itemStack, source: player }) => {
     }
 });
 let timer = 0;
-world.afterEvents.entityHitBlock.subscribe(({ hitBlock }) => {
-    timer = Date.now();
-});
-world.afterEvents.playerBreakBlock.subscribe((ev) => {
-    console.warn(Date.now() - timer);
-});
