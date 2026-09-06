@@ -12,11 +12,15 @@
       "minecraft:loot": "loot_tables/echo_rift/blocks/ores/fragments/forgotten_kingdom.json",
       "minecraft:light_dampening": 15,
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 2.5,
+        "seconds_to_destroy": 10,
         "item_specific_speeds": [
           {
-            "item": { "tags": "q.any_tag('minecraft:is_pickaxe')" },
-            "destroy_speed": 0.75
+            "item": { "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')" },
+            "destroy_speed": 3
+          },
+          {
+            "item": { "tags": "q.all_tags('minecraft:is_pickaxe') && q.any_tag('minecraft:diamond_tier', 'minecraft:netherite_tier')" },
+            "destroy_speed": 2.75
           }
         ]
       },
