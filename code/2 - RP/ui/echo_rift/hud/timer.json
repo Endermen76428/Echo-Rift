@@ -58,52 +58,6 @@
                 ]
               }
             }
-            /* {
-              "centered_panel": {
-                "type": "panel",
-                "size": [ "100%c", "100%c" ],
-                // "offset": [ 0, -5 ],
-                "controls": [
-                  // {
-                  //   "label": {
-                  //     "type": "label",
-                  //     "text": "ui.echo_rift:memory.timer",
-                  //     "text_alignment": "center",
-                  //     "localize": true
-                  //   }
-                  // },
-                  {
-                    "number": {
-                      "type": "label",
-                      "text": "#text",
-                      // "offset": [ 0, 2 ],
-                      "text_alignment": "center",
-                      "anchor_from": "center",
-                      "anchor_to": "center",
-                      "bindings": [
-                        {
-                          "binding_type": "view",
-                          "source_control_name": "timer_data_control",
-                          "source_property_name": "#preserved_text",
-                          "target_property_name": "#info"
-                        },
-                        {
-                          "binding_type": "view",
-                          "source_property_name": "(#info - ('%.5s' * #info))",
-                          "target_property_name": "#time"
-                        },
-                        {
-                          "binding_type": "view",
-                          // "source_property_name": "('< ' + #info + ' >')",
-                          "source_property_name": "('%.9s' * #time)",
-                          "target_property_name": "#text"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            } */
           ]
         }
       },
@@ -149,7 +103,6 @@
               "details": {
                 "type": "image",
                 "size": [ 111, 15 ],
-                // "offset": [ 0, 7 ],
                 "bindings": [
                   {
                     "binding_type": "view",

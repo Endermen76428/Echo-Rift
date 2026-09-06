@@ -1,10 +1,9 @@
-const addonId = "digital_miner";
 export const guidebookInfo = {
     title: "main",
     buttons: [
         {
-            title: "how_work",
-            path: "works",
+            title: "general",
+            path: "info",
             buttons: [
                 {
                     title: "digital_miner",
@@ -408,32 +407,6 @@ export const guidebookInfo = {
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            title: "change_log",
-            path: "change_log",
-            buttons: [
-                {
-                    title: "version_1.0",
-                    path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-                },
-                {
-                    title: "version_0.4",
-                    path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-                },
-                {
-                    title: "version_0.3",
-                    path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-                },
-                {
-                    title: "version_0.2",
-                    path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-                },
-                {
-                    title: "version_0.1",
-                    path: "C:textures/digital_miner/ui/guidebook/main/change_log"
                 }
             ]
         }

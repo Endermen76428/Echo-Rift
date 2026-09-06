@@ -43,7 +43,7 @@ export const guidebook = new class Guidebook {
         if (currentForm.labelA)
             form.label(translateId + "label." + titleId + (titlePath.length > 0 ? "." : "") + currentForm.labelA);
         if (dir.length > 0)
-            form.button("ui.bedrock_awakening:guidebook.return", `textures/${addonId}/ui/guidebook/return`);
+            form.button("ui.bedrock_awakening:guidebook.return", `textures/bedrock_awakening/ui/guidebook/return`);
         form.show(player).then(({ canceled, selection }) => {
             if (canceled || selection == undefined)
                 return;

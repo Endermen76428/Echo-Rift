@@ -189,14 +189,18 @@ loading_message.echo_rift:random_lines.modjam=Esse addon foi criado em 1 mês pa
 ## UI
 ## --------------------------------------------------
 
+ui.bedrock_awakening:guidebook.return=Voltar
+
+### Guidebook
+
+ui.echo_rift:guidebook.title.main=Echo Rift
+ui.echo_rift:guidebook.body.main=§lEcho Rift§r é um addon no estilo Ataque de Dungeons.\nEncontre memórias perdidas e abra fissuras para um passado distante.\nSupere seus desafios para conseguir suas recompensas.\n\n
+
 ### Rift Close
 
 ui.echo_rift:rift.remove.title=Fechar Fenda
 ui.echo_rift:rift.remove.body=Você quer fechar essa fenda?
 ui.echo_rift:rift.remove.keep=Manter Fenda
-
-### Timer
-ui.echo_rift:memory.timer=Tempo até o Colapso
 
 
 

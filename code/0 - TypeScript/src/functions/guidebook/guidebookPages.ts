@@ -1,13 +1,11 @@
 import { world } from "@minecraft/server"
 
-const addonId = "digital_miner"
-
 export const guidebookInfo: GuidebookPages = {
   title: "main",
   buttons: [
     { // 0
-      title: "how_work",
-      path: "works",
+      title: "general",
+      path: "info",
       buttons: [
         { // 0, 0
           title: "digital_miner",
@@ -413,32 +411,6 @@ export const guidebookInfo: GuidebookPages = {
           ]
         }
       ]
-    },
-    { // 2
-      title: "change_log",
-      path: "change_log",
-      buttons: [
-        {
-          title: "version_1.0",
-          path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-        },
-        {
-          title: "version_0.4",
-          path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-        },
-        {
-          title: "version_0.3",
-          path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-        },
-        {
-          title: "version_0.2",
-          path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-        },
-        {
-          title: "version_0.1",
-          path: "C:textures/digital_miner/ui/guidebook/main/change_log"
-        }
-      ]
     }
   ]
 }
@@ -446,7 +418,6 @@ export const guidebookInfo: GuidebookPages = {
 
 
 export interface GuidebookPages extends Buttons {
-  // type?: "action" | "modal"
   title?: string
   body?: false | string
   header?: string

@@ -189,14 +189,18 @@ loading_message.echo_rift:random_lines.modjam=This addon was created in 1 month 
 ## UI
 ## --------------------------------------------------
 
+ui.bedrock_awakening:guidebook.return=Return
+
+### Guidebook
+
+ui.echo_rift:guidebook.title.main=Echo Rift
+ui.echo_rift:guidebook.body.main=§lEcho Rift§r is a Dungeon crawler-style addon.\nFind lost memories and open fissures to a distant past.\nOvercome its challenges to earn its rewards.\n\n
+
 ### Rift Close
 
 ui.echo_rift:rift.remove.title=Close Rift
 ui.echo_rift:rift.remove.body=Do you want to close this rift?
 ui.echo_rift:rift.remove.keep=Keep Rift
-
-### Timer
-ui.echo_rift:memory.timer=Time for Collapse
 
 
 
