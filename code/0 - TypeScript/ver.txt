@@ -11,6 +11,8 @@ tem que alterar o iterations dos minerios pra corresponder a quantia de tentativ
 Echo Rift v0.1.1 Alpha
 > Features:
 Blocks:
+  > General:
+    - Added Vibrant Visual compatibility.
   > Marble:
     - Changed the breaking speed of all marble blocks to match vanilla blocks.
     - Added crafts to Slabs, Vertical Slabs and Stairs in all marble variations.
