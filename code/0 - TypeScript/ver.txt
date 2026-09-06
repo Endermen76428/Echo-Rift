@@ -7,6 +7,7 @@ adicionar o componente de conexão das cercas nas lajes e escadas
 no sistema das lajes daria pra verificar se o player está dentro do bloco para não executar, pra ficar ainda mais parecido com a vanilla
 se tiver uma escada no Top e um protal_frame tambem do lado oeste o frame some (na real ta acontecendo no bottom tambem e até mesmo com lajes, e parece não ter um padrão)
 tem que alterar o iterations dos minerios pra corresponder a quantia de tentativas do vanilla, alem de adicionar as variações uniforme e por camadas
+os blocos de marmore não passam redstone, tentei usar um botão neles e não funcionou
 
 Echo Rift v0.1.1 Alpha
 > Features:
@@ -45,12 +46,12 @@ Items:
 
 > Bug Fix:
 Blocks:
-  > Voxel Shapes:
-    - Blocks of Marble and their variations had their Voxel Shape changed to the blocks of:
-      - Slabs;
-      - Vertical Slabs;
-      - Stairs.
-    - Red Marble Slabs no longer disappear when placed one on top of the other.
+> Voxel Shapes:
+  - Blocks of Marble and their variations had their Voxel Shape changed to the blocks of:
+    - Slabs;
+    - Vertical Slabs;
+    - Stairs.
+  - Red Marble Slabs no longer disappear when placed one on top of the other.
 
 
 
