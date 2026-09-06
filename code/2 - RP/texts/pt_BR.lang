@@ -240,7 +240,7 @@ ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.marble_cave=A Cave
 
 ## Page 1-0-1
 ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.memory=Memória
-ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.memory=§l>§r A Memória do Reino Esquecido pode ser encontrado em forma de um minério no bioma de Carvernas de Mármore entre as camadas y0 à y128.\n§l>§r O Minério de Fragmento de Memória pode ser coletado com uma picareta de nível ferro ou superior, soltando de 1 a 3 fragmentos de memória, podendo ser utilizado o encantamento de fortuna para aumentar a quantia conseguida.\n§l>§r Para conseguir uma Memória Completa junte 9 fragmentos em uma Bancada de Trabalho.\n\n
+ui.echo_rift:guidebook.body.main.raids_list.forgotten_kingdom.memory=§l>§r A Memória do Reino Esquecido pode ser encontrado em forma de um minério no bioma de Carvernas de Mármore entre as camadas y0 à y128.\n§l>§r O Minério de Fragmento de Memória pode ser coletado com uma picareta de nível ferro ou superior, soltando de 1 a 3 fragmentos de memória, use o encantamento de fortuna para aumentar a quantia conseguida.\n§l>§r Para conseguir uma Memória Completa junte 9 fragmentos em uma Bancada de Trabalho.\n\n
 
 ## Page 1-0-2
 ui.echo_rift:guidebook.title.main.raids_list.forgotten_kingdom.rift=Fissura
