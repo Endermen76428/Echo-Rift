@@ -1,0 +1,47 @@
+import { holdMomeryFragment } from "../functions/holdItem/memoryFragment"
+import { EntityComponentTypes, Player, system } from "@minecraft/server"
+import { placeSlabVertical } from "../functions/build/slabsVertical"
+import { guidebook } from "../functions/guidebook/guidebook"
+import { openDoor } from "../functions/memory/open_door"
+import { placeSlab } from "../functions/build/slabs"
+
+system.beforeEvents.startup.subscribe(({blockComponentRegistry: customB, itemComponentRegistry: customI, dimensionRegistry: customD}) => {
+  // Dimensions
+  customD.registerCustomDimension("echo_rift:forgotten_kingdom")
+
+  // Blocks
+  customB.registerCustomComponent("echo_rift:portal_corner", {
+    onBreak: ({block}) => {}
+  })
+  customB.registerCustomComponent("echo_rift:door", {
+    onPlayerInteract: ({block}) => {
+      openDoor(block)
+    }
+  })
+
+  // Items
+  customI.registerCustomComponent("echo_rift:guidebook", {
+    onUse: ({source}) => {
+      guidebook.open(source, [])
+    }
+  })
+  customI.registerCustomComponent("echo_rift:memory_fragment", {
+    onUse: ({source: player, itemStack: item}) => {
+      if(item && player.hasTag("echo_rift:can_open_rift")){
+        player.addTag("echo_rift:try_open_rift")
+        player.removeTag("echo_rift:can_open_rift")
+
+        const playerInv = player.getComponent(EntityComponentTypes.Inventory)?.container
+        if(playerInv == undefined) return
+
+        holdMomeryFragment({type: "memory_frag", typeFunc: () => {}, player, playerInv, item, lastSlot: player.selectedSlotIndex})
+      }
+    }
+  })
+  customI.registerCustomComponent("bedrock_awakening:slab", {
+    onUseOn: () => {}
+  })
+  customI.registerCustomComponent("bedrock_awakening:slab_vertical", {
+    onUseOn: () => {}
+  })
+})
